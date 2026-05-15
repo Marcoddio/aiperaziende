@@ -1,0 +1,3797 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI per Aziende — Forma il tuo team all'uso dell'intelligenza artificiale</title>
+<meta name="description" content="Consulenza AI on-demand per aziende italiane. Formiamo il tuo team sull'uso pratico dell'intelligenza artificiale nei processi quotidiani: marketing, vendite, operations, amministrazione."><link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --white:#FFFFFF;
+  --off-white:#FAFAFA;
+  --gray-50:#F5F5F5;
+  --gray-100:#EEEEEE;
+  --gray-200:#E0E0E0;
+  --gray-300:#C7C7C7;
+  --gray-400:#9E9E9E;
+  --gray-500:#757575;
+  --gray-600:#525252;
+  --gray-700:#3A3A3A;
+  --gray-800:#212121;
+  --gray-900:#141414;
+  --black:#0A0A0A;
+  --ink:#1A1B2E;
+  --brand:#4F5AB7;
+  --brand-hover:#3F4A9F;
+  --brand-soft:#6772C5;
+  --brand-tint:#EEF0FA;
+  --ink-soft:#3A3A3A;
+  --ink-mute:#757575;
+  --green-wa:#25D366;
+  --shadow-soft:0 2px 16px rgba(0,0,0,.04);
+  --shadow-med:0 8px 32px rgba(0,0,0,.08);
+  --shadow-deep:0 20px 50px rgba(0,0,0,.18);
+  --radius:12px;
+  --radius-sm:8px;
+  --radius-lg:20px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Poppins',-apple-system,sans-serif;
+  background:var(--white);
+  color:var(--ink);
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+h1,h2,h3,h4{
+  font-family:'Poppins',sans-serif;
+  letter-spacing:-.025em;
+  line-height:1.1;
+  color:var(--ink);
+}
+
+.italic-em{
+  font-style:italic;
+  font-weight:500;
+}
+
+.underline-em{
+  position:relative;
+  white-space:nowrap;
+}
+.underline-em::after{
+  content:'';
+  position:absolute;
+  left:0;right:0;
+  bottom:.05em;
+  height:.18em;
+  background:var(--brand);
+  z-index:-1;
+  opacity:.12;
+}
+
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+
+.sr-only{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== NAV ===== */
+nav.topnav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--gray-100);
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:18px 24px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.nav-logo img{
+  height:38px;
+  width:auto;
+}
+.nav-logo-text{
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:-.01em;
+}
+.nav-logo-text small{
+  display:block;
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-weight:500;
+}
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:28px;
+  margin:0;
+  padding:0;
+  flex:1;
+  justify-content:center;
+}
+.nav-links a{
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink-soft);
+  letter-spacing:-.005em;
+  transition:color .2s ease;
+  position:relative;
+  padding:6px 2px;
+}
+.nav-links a:hover{
+  color:var(--ink);
+  text-decoration:none;
+}
+.nav-links a::after{
+  content:'';
+  position:absolute;
+  left:0;right:0;bottom:0;
+  height:1.5px;
+  background:var(--brand);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .25s ease;
+}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{
+  background:var(--brand);
+  color:var(--white);
+  padding:0 22px;
+  height:40px;
+  line-height:40px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:500;
+  transition:all .25s ease;
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  display:inline-block;
+  text-align:center;
+  white-space:nowrap;
+  flex-shrink:0;
+  vertical-align:middle;
+}
+.nav-cta:hover{background:var(--brand-hover);text-decoration:none}
+
+/* ===== HERO ===== */
+strong{font-weight:700;color:var(--ink)}
+.hero-sub strong{font-weight:700;color:var(--ink)}
+.hero{
+  padding:90px 0 110px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Subtle background pattern */
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(10,10,10,.025) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(10,10,10,.02) 0%, transparent 50%);
+  pointer-events:none;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink);
+  font-weight:600;
+  margin-bottom:28px;
+}
+.hero-eyebrow::before{
+  content:'';
+  width:32px;
+  height:1px;
+  background:var(--brand);
+}
+.hero h1{
+  font-size:clamp(40px,5.5vw,72px);
+  margin-bottom:28px;
+  font-weight:300;
+  letter-spacing:-.035em;
+}
+.hero h1 .italic-em{font-weight:600;font-style:italic}
+.hero-sub{
+  font-size:18px;
+  color:var(--ink-soft);
+  margin-bottom:40px;
+  max-width:540px;
+  line-height:1.6;
+  font-weight:400;
+}
+.hero-ctas{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.btn-primary{
+  background:var(--brand);
+  color:var(--white);
+  padding:16px 30px;
+  border-radius:100px;
+  font-size:14px;
+  font-weight:500;
+  border:none;
+  cursor:pointer;
+  transition:all .25s ease;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-family:inherit;
+}
+.btn-primary:hover{background:var(--brand-hover);text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-med)}
+.btn-secondary{
+  background:transparent;
+  color:var(--ink);
+  padding:16px 26px;
+  border-radius:100px;
+  font-size:14px;
+  font-weight:500;
+  border:1.5px solid var(--gray-200);
+  cursor:pointer;
+  transition:all .25s ease;
+  font-family:inherit;
+}
+.btn-secondary:hover{border-color:var(--ink);text-decoration:none;background:var(--gray-50)}
+
+.hero-visual{
+  position:relative;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(79,90,183,.08) 0%, transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(79,90,183,.05) 0%, transparent 50%),
+    var(--off-white);
+  color:var(--ink);
+  border-radius:var(--radius-lg);
+  padding:36px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  box-shadow:var(--shadow-soft);
+  border:1px solid var(--gray-100);
+  min-height:auto;
+}
+.hero-card{
+  background:var(--white);
+  border:1px solid var(--gray-100);
+  border-radius:var(--radius);
+  padding:20px 22px;
+  position:relative;
+  z-index:2;
+  box-shadow:0 1px 2px rgba(10,10,10,.03);
+  transition:all .2s ease;
+}
+.hero-card:hover{border-color:var(--gray-200);transform:translateY(-1px)}
+.hero-card-label{
+  font-size:10px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--brand);
+  margin-bottom:8px;
+  font-weight:700;
+}
+.hero-card-val{
+  font-size:18px;
+  font-weight:400;
+  letter-spacing:-.015em;
+  line-height:1.35;
+  color:var(--ink);
+}
+.hero-card-val .italic-em{font-weight:600;font-style:italic;color:var(--brand)}
+.hero-card-val strong{font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.hero-card-val small{font-size:13px;color:var(--ink-soft);display:block;margin-top:6px;font-weight:400;line-height:1.45}
+.hero-card.accent{
+  background:linear-gradient(135deg,var(--brand) 0%,var(--brand-hover) 100%);
+  color:var(--white);
+  border:none;
+  box-shadow:0 8px 24px rgba(79,90,183,.22);
+}
+.hero-card.accent .hero-card-label{color:rgba(255,255,255,.78)}
+.hero-card.accent .hero-card-val{color:var(--white)}
+.hero-card.accent .hero-card-val strong{color:var(--white)}
+.hero-card.accent .hero-card-val .italic-em{color:#fff}
+.hero-card.accent .hero-card-val small{color:rgba(255,255,255,.78)}
+.hero-trust{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  align-self:flex-start;
+  margin-top:4px;
+  background:var(--white);
+  color:var(--ink);
+  padding:9px 16px;
+  border-radius:100px;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  white-space:nowrap;
+  box-shadow:var(--shadow-soft);
+  border:1px solid var(--gray-100);
+}
+.hero-trust .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 4px rgba(34,197,94,.18);
+  flex-shrink:0;
+}
+
+/* ===== SECTION COMMON ===== */
+section{padding:100px 0;position:relative}
+.section-eyebrow{
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--ink);
+  font-weight:600;
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  justify-content:center;
+}
+.section-eyebrow::before,.section-eyebrow::after{
+  content:'';
+  width:24px;
+  height:1px;
+  background:var(--gray-300);
+}
+.section-title{
+  font-size:clamp(34px,4.5vw,54px);
+  text-align:center;
+  margin-bottom:18px;
+  max-width:820px;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight:300;
+  letter-spacing:-.03em;
+}
+.section-title .italic-em{font-weight:600;font-style:italic}
+.section-sub{
+  text-align:center;
+  font-size:17px;
+  color:var(--ink-soft);
+  max-width:640px;
+  margin:0 auto 60px;
+  line-height:1.65;
+}
+
+/* ===== PER CHI È ===== */
+.for-whom{background:var(--white);padding:80px 0}
+.for-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:50px;
+}
+.for-card{
+  background:var(--off-white);
+  padding:30px 26px;
+  border-radius:var(--radius);
+  position:relative;
+  transition:all .3s ease;
+  border:1px solid var(--gray-100);
+}
+.for-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-med);border-color:var(--gray-200)}
+.for-card-num{
+  font-size:38px;
+  font-weight:200;
+  color:var(--ink);
+  line-height:1;
+  margin-bottom:18px;
+  letter-spacing:-.04em;
+  position:relative;
+  display:inline-block;
+}
+.for-card-num::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:30px;
+  height:1px;
+  background:var(--brand);
+}
+.for-card h3{
+  font-size:19px;
+  margin:18px 0 14px;
+  font-weight:600;
+  letter-spacing:-.02em;
+  line-height:1.25;
+}
+.for-card p{
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.6;
+}
+.for-card.featured{
+  background:var(--brand);
+  color:var(--white);
+  border:none;
+}
+.for-card.featured .for-card-num{color:var(--white)}
+.for-card.featured .for-card-num::after{background:var(--white)}
+.for-card.featured h3{color:var(--white)}
+.for-card.featured p{color:rgba(255,255,255,.75)}
+.for-card.featured p strong{color:var(--white)}
+.for-card-tag{
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+  color:var(--white);
+  padding:5px 11px;
+  border-radius:100px;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.15em;
+  margin-bottom:14px;
+  text-transform:uppercase;
+  border:1px solid rgba(255,255,255,.2);
+}
+.for-card-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+.for-card-header .for-card-num{margin-bottom:0}
+.for-card-header .for-card-tag{margin-bottom:0;margin-top:14px}
+
+/* ===== CONFIGURATORE ===== */
+.configurator{
+  background:var(--gray-50);
+  padding:100px 0;
+  position:relative;
+}
+.config-live-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--brand);
+  color:var(--white);
+  padding:7px 14px 7px 12px;
+  border-radius:100px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  margin:0 auto 18px;
+  position:relative;
+  z-index:2;
+}
+.config-live-tag .live-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#25D366;
+  box-shadow:0 0 0 0 rgba(37,211,102,.6);
+  animation:liveDotPulse 1.6s ease-in-out infinite;
+}
+.config-live-tag-wrap{
+  text-align:center;
+  margin-bottom:12px;
+}
+@keyframes liveDotPulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.65)}
+  70%{box-shadow:0 0 0 9px rgba(37,211,102,0)}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+.config-box{
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-med);
+  max-width:880px;
+  margin:0 auto;
+  overflow:hidden;
+  border:1px solid var(--gray-100);
+  position:relative;
+  animation:configBoxAttention 4.5s ease-in-out infinite;
+}
+@keyframes configBoxAttention{
+  0%,100%{
+    box-shadow:0 8px 32px rgba(0,0,0,.08), 0 0 0 0 rgba(10,10,10,0);
+    transform:translateY(0);
+  }
+  50%{
+    box-shadow:0 18px 50px rgba(0,0,0,.14), 0 0 0 1px rgba(10,10,10,.04);
+    transform:translateY(-3px);
+  }
+}
+.config-box:hover{
+  animation:none;
+  box-shadow:0 20px 60px rgba(0,0,0,.16);
+  transform:translateY(-3px);
+  transition:all .3s ease;
+}
+@media (prefers-reduced-motion: reduce){
+  .config-box,.config-next,.config-live-tag .live-dot{animation:none !important}
+}
+.config-progress{
+  background:var(--gray-100);
+  height:4px;
+  position:relative;
+}
+.config-progress-bar{
+  position:absolute;
+  left:0;top:0;bottom:0;
+  background:var(--brand);
+  width:16.66%;
+  transition:width .4s ease;
+}
+.config-body{padding:50px 60px}
+.config-step-num{
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:14px;
+  font-weight:600;
+}
+.config-question{
+  font-size:30px;
+  font-weight:500;
+  margin-bottom:14px;
+  letter-spacing:-.025em;
+  line-height:1.25;
+  color:var(--ink);
+}
+.config-help{
+  color:var(--ink-mute);
+  font-size:15px;
+  margin-bottom:36px;
+  line-height:1.6;
+}
+.config-options{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:36px;
+}
+.config-option{
+  background:var(--white);
+  border:1.5px solid var(--gray-200);
+  padding:18px 22px;
+  border-radius:var(--radius);
+  cursor:pointer;
+  transition:all .2s ease;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  text-align:left;
+  font-family:inherit;
+  font-size:15px;
+  color:var(--ink);
+  width:100%;
+}
+.config-option:hover{border-color:var(--ink);background:var(--off-white)}
+.config-option.selected{
+  border-color:var(--ink);
+  background:var(--brand);
+  color:var(--white);
+}
+.config-option.selected .config-option-text strong{color:var(--white)}
+.config-option.selected .config-option-text small{color:rgba(255,255,255,.7)}
+.config-option-marker{
+  width:22px;height:22px;
+  border-radius:50%;
+  border:2px solid var(--gray-300);
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  transition:all .2s ease;
+}
+.config-option.selected .config-option-marker{
+  border-color:var(--white);
+  background:var(--white);
+}
+.config-option.selected .config-option-marker::after{
+  content:'';
+  width:7px;height:7px;
+  background:var(--brand);
+  border-radius:50%;
+}
+.config-option-text{flex:1}
+.config-option-text strong{display:block;font-weight:600;margin-bottom:2px;font-size:15px}
+.config-option-text small{color:var(--ink-mute);font-size:13px;font-weight:400}
+
+.config-slider-wrap{margin-bottom:36px}
+.config-slider-value{
+  font-size:54px;
+  font-weight:300;
+  color:var(--ink);
+  text-align:center;
+  margin-bottom:8px;
+  letter-spacing:-.04em;
+}
+.config-slider-hint{
+  text-align:center;
+  color:var(--ink-mute);
+  font-size:13px;
+  margin-bottom:32px;
+}
+.config-slider{
+  -webkit-appearance:none;
+  appearance:none;
+  width:100%;
+  height:4px;
+  background:var(--gray-200);
+  border-radius:3px;
+  outline:none;
+}
+.config-slider::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance:none;
+  width:24px;height:24px;
+  background:var(--brand);
+  border-radius:50%;
+  cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.2);
+  transition:transform .15s ease;
+  border:3px solid var(--white);
+}
+.config-slider::-webkit-slider-thumb:hover{transform:scale(1.15)}
+.config-slider::-moz-range-thumb{
+  width:24px;height:24px;
+  background:var(--brand);
+  border-radius:50%;
+  cursor:pointer;
+  border:3px solid var(--white);
+  box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+.config-slider-range{
+  display:flex;
+  justify-content:space-between;
+  margin-top:12px;
+  font-size:12px;
+  color:var(--ink-mute);
+  font-weight:500;
+}
+
+.config-nav{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  margin-top:28px;
+  gap:12px;
+}
+.config-back{
+  background:none;
+  border:none;
+  color:var(--ink-mute);
+  cursor:pointer;
+  font-family:inherit;
+  font-size:14px;
+  padding:8px 0;
+  font-weight:500;
+  justify-self:start;
+}
+.config-back:hover{color:var(--ink)}
+.config-back:disabled{visibility:hidden}
+.config-next{
+  background:var(--brand);
+  color:var(--white);
+  border:none;
+  padding:16px 36px;
+  border-radius:100px;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:600;
+  transition:background .25s ease, transform .25s ease;
+  grid-column:2;
+  justify-self:center;
+  letter-spacing:.01em;
+  position:relative;
+}
+.config-next:not(:disabled){
+  animation:configNextPulse 2.4s ease-in-out infinite;
+  box-shadow:0 8px 24px rgba(10,10,10,.2);
+}
+.config-next:hover:not(:disabled){
+  background:var(--gray-700);
+  animation:none;
+  transform:translateY(-2px) scale(1.04);
+  box-shadow:0 14px 36px rgba(10,10,10,.32);
+}
+.config-next:disabled{
+  background:var(--gray-200);
+  color:var(--gray-400);
+  cursor:not-allowed;
+  animation:none;
+  box-shadow:none;
+}
+@keyframes configNextPulse{
+  0%,100%{box-shadow:0 8px 24px rgba(10,10,10,.2);transform:translateY(0)}
+  50%{box-shadow:0 14px 36px rgba(10,10,10,.35);transform:translateY(-2px)}
+}
+
+/* === RESULT === */
+.config-result{
+  display:none;
+  padding:50px 60px;
+}
+.config-result.active{display:block}
+.result-profile-name{
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:10px;
+  font-weight:600;
+}
+.result-headline{
+  font-size:36px;
+  font-weight:400;
+  margin-bottom:18px;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+.result-headline .italic-em{font-weight:600;font-style:italic}
+.result-desc{
+  color:var(--ink-soft);
+  font-size:16px;
+  margin-bottom:36px;
+  line-height:1.65;
+  max-width:640px;
+}
+.result-grid{
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:24px;
+  margin-bottom:32px;
+}
+.result-card{
+  background:var(--off-white);
+  border-radius:var(--radius);
+  padding:28px;
+  border:1px solid var(--gray-100);
+}
+.result-card h4{
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:20px;
+  font-weight:600;
+}
+.alloc-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:11px 0;
+  font-size:14.5px;
+  font-weight:500;
+}
+.alloc-row + .alloc-row{border-top:1px solid var(--gray-100)}
+.alloc-bar{
+  width:100%;height:8px;
+  background:var(--gray-100);
+  border-radius:4px;
+  overflow:hidden;
+  margin-top:18px;
+  display:flex;
+}
+.alloc-seg{height:100%}
+.seg-equity{background:var(--brand)}
+.seg-bond{background:var(--gray-400)}
+.seg-cash{background:var(--gray-200)}
+
+.scenarios{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  align-items:stretch;
+}
+.scenario{
+  background:var(--white);
+  border:1px solid var(--gray-100);
+  border-radius:var(--radius-sm);
+  padding:18px 14px;
+  text-align:center;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.scenario.low{
+  justify-content:flex-start;
+}
+.scenario.base{
+  background:var(--brand);
+  color:var(--white);
+  border-color:var(--ink);
+}
+.scenario.low{
+  background:var(--white);
+  border-left:3px solid #8B3A3A;
+}
+.scenario.low .scenario-value{color:#8B3A3A}
+.scenario.high{
+  background:var(--white);
+  border-left:3px solid #3F6E4A;
+}
+.scenario.high .scenario-value{color:#3F6E4A}
+.scenario-label{
+  font-size:9.5px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:8px;
+  font-weight:600;
+}
+.scenario.base .scenario-label{color:rgba(255,255,255,.6)}
+.scenario.low .scenario-label{color:#8B3A3A;opacity:.8}
+.scenario.high .scenario-label{color:#3F6E4A;opacity:.8}
+.scenario-value{
+  font-size:22px;
+  font-weight:500;
+  margin-bottom:6px;
+  letter-spacing:-.02em;
+  white-space:nowrap;
+}
+.scenario-delta{font-size:10.5px;color:var(--ink-mute);line-height:1.4}
+.scenario.base .scenario-delta{color:rgba(255,255,255,.5)}
+
+/* Confronto inflazione dentro la box Sfavorevole */
+.scenario-compare{
+  margin-top:auto;
+  padding-top:12px;
+  border-top:1px dashed var(--gray-200);
+  text-align:center;
+}
+.scenario.low .scenario-delta{
+  margin-bottom:14px;
+}
+.scenario-compare-label{
+  font-size:8.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:6px;
+  font-weight:600;
+  line-height:1.4;
+}
+.scenario-compare-value{
+  font-size:15px;
+  font-weight:500;
+  color:var(--ink-soft);
+  margin-bottom:3px;
+  letter-spacing:-.015em;
+  white-space:nowrap;
+}
+.scenario-compare-delta{
+  font-size:9.5px;
+  color:#8B3A3A;
+  opacity:.85;
+  line-height:1.4;
+  font-weight:500;
+}
+
+.result-disclaimer{
+  background:rgba(10,10,10,.025);
+  border:1px solid var(--gray-100);
+  padding:14px 18px;
+  border-radius:var(--radius-sm);
+  font-size:11.5px;
+  color:var(--ink-soft);
+  line-height:1.65;
+  margin-top:18px;
+  text-align:center;
+}
+.result-disclaimer strong{color:var(--ink);font-weight:600}
+
+.result-cta-box{
+  background:var(--brand);
+  color:var(--white);
+  border-radius:var(--radius);
+  padding:36px;
+  text-align:center;
+}
+.result-cta-box h3{
+  color:var(--white);
+  font-size:26px;
+  margin-bottom:12px;
+  font-weight:500;
+  letter-spacing:-.02em;
+}
+.result-cta-box p{
+  color:rgba(255,255,255,.7);
+  font-size:15px;
+  margin-bottom:24px;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.result-cta-box .btn-primary{background:var(--white);color:var(--ink)}
+.result-cta-box .btn-primary:hover{background:var(--gray-100);color:var(--ink)}
+.result-restart{
+  background:none;
+  border:none;
+  color:rgba(255,255,255,.5);
+  font-size:13px;
+  margin-top:16px;
+  cursor:pointer;
+  text-decoration:underline;
+  font-family:inherit;
+  font-weight:500;
+}
+
+/* ===== COME LAVORO / FEE-ONLY ===== */
+.how{padding:100px 0;background:var(--white)}
+.how-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.how-text h2{
+  font-size:clamp(32px,4vw,48px);
+  margin-bottom:24px;
+  font-weight:300;
+  letter-spacing:-.03em;
+}
+.how-text h2 .italic-em{font-weight:600;font-style:italic}
+.how-text > p{
+  color:var(--ink-soft);
+  font-size:16.5px;
+  margin-bottom:32px;
+  line-height:1.65;
+}
+.how-points{list-style:none;padding:0}
+.how-points li{
+  padding:22px 0;
+  border-top:1px solid var(--gray-100);
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+.how-points li:last-child{border-bottom:1px solid var(--gray-100)}
+.how-points-icon{
+  width:42px;
+  height:42px;
+  background:var(--brand);
+  color:var(--white);
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+}
+.how-points-icon svg{width:20px;height:20px}
+.how-points-content > strong{
+  display:block;
+  font-size:15.5px;
+  font-weight:600;
+  margin-bottom:6px;
+  letter-spacing:-.01em;
+}
+.how-points-content span strong{font-weight:600;color:var(--ink)}
+.how-points-content span{color:var(--ink-soft);font-size:14px;line-height:1.6}
+
+.fee-card{
+  background:var(--brand);
+  color:var(--white);
+  border-radius:var(--radius-lg);
+  padding:48px 40px;
+  box-shadow:var(--shadow-med);
+  position:relative;
+  overflow:hidden;
+}
+.fee-card::before{
+  content:'';
+  position:absolute;
+  top:-100px;right:-100px;
+  width:280px;height:280px;
+  background:radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 70%);
+}
+.fee-tag{
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+  color:var(--white);
+  padding:6px 14px;
+  border-radius:100px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.1em;
+  margin-bottom:24px;
+  position:relative;
+  text-transform:uppercase;
+  border:1px solid rgba(255,255,255,.15);
+}
+.fee-card h3{
+  font-size:30px;
+  margin-bottom:8px;
+  font-weight:400;
+  position:relative;
+  color:var(--white);
+  letter-spacing:-.025em;
+  line-height:1.2;
+}
+.fee-card > p{
+  color:rgba(255,255,255,.65);
+  margin-bottom:28px;
+  position:relative;
+  font-size:15px;
+  line-height:1.65;
+}
+.fee-list{
+  list-style:none;
+  padding:0;
+  position:relative;
+}
+.fee-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:11px 0;
+  font-size:14.5px;
+  color:rgba(255,255,255,.9);
+}
+.fee-list li svg{
+  width:20px;height:20px;
+  color:var(--white);
+  flex-shrink:0;
+  margin-top:2px;
+}
+.fee-vs{
+  margin-top:28px;
+  padding-top:24px;
+  border-top:1px dashed rgba(255,255,255,.15);
+  position:relative;
+}
+.fee-vs-row{
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  font-size:13px;
+  color:rgba(255,255,255,.5);
+  align-items:center;
+}
+.fee-vs-row strong{color:var(--white);font-weight:600}
+.fee-vs-row.strike{text-decoration:line-through;opacity:.45}
+
+/* ===== CHI SONO ===== */
+.about{padding:120px 0;background:var(--off-white)}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:70px;
+  align-items:start;
+}
+.about-img{
+  background:linear-gradient(160deg,#4F5AB7 0%,#3F4A9F 70%,#2E3982 100%);
+  border-radius:var(--radius-lg);
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow-med);
+  padding:38px 30px;
+  position:sticky;
+  top:100px;
+}
+.about-img::before{
+  content:"";
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size:36px 36px;
+  pointer-events:none;
+}
+.method-schema{position:relative;color:#fff;z-index:1}
+.method-schema-title{
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);font-weight:600;margin-bottom:6px;
+}
+.method-schema-h{
+  font-size:22px;font-weight:500;letter-spacing:-.01em;
+  margin-bottom:26px;line-height:1.3;color:#fff;
+}
+.method-schema-h em{font-style:italic;font-weight:600}
+.method-flow{display:flex;flex-direction:column;gap:0;position:relative}
+.method-step{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:14px 14px;border-radius:12px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  position:relative;
+  backdrop-filter:blur(4px);
+}
+.method-step + .method-step{margin-top:10px}
+.method-step + .method-step::before{
+  content:"";position:absolute;top:-10px;left:34px;
+  width:1.5px;height:10px;
+  background:linear-gradient(to bottom, transparent, rgba(255,255,255,0.4));
+}
+.method-step-num{
+  flex-shrink:0;width:38px;height:38px;border-radius:50%;
+  background:#fff;color:var(--brand);
+  display:grid;place-items:center;
+  font-weight:700;font-size:15px;letter-spacing:-.02em;
+  box-shadow:0 4px 12px rgba(0,0,0,.18);
+}
+.method-step-body{flex:1;min-width:0}
+.method-step-title{
+  font-size:14px;font-weight:600;color:#fff;line-height:1.3;
+  margin-bottom:3px;letter-spacing:-.01em;
+}
+.method-step-desc{
+  font-size:12.5px;color:rgba(255,255,255,.78);line-height:1.5;
+}
+.method-step-tag{
+  display:inline-block;margin-top:8px;
+  font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;
+  background:rgba(255,255,255,0.14);padding:3px 8px;border-radius:99px;
+  color:rgba(255,255,255,.95);
+}
+.method-output{
+  margin-top:18px;padding:14px 16px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.96);
+  color:var(--brand);
+  display:flex;align-items:center;gap:12px;
+}
+.method-output-ico{
+  width:34px;height:34px;border-radius:8px;
+  background:var(--brand);color:#fff;
+  display:grid;place-items:center;flex-shrink:0;
+}
+.method-output-text{font-size:12.5px;line-height:1.45;color:var(--ink)}
+.method-output-text strong{display:block;color:var(--ink);font-weight:700;font-size:13.5px;margin-bottom:2px}
+.about-img img{width:100%;height:100%;object-fit:cover;object-position:center top}
+
+.about-text h2{
+  font-size:clamp(34px,4.2vw,52px);
+  margin-bottom:20px;
+  font-weight:300;
+  letter-spacing:-.03em;
+}
+.about-text h2 .italic-em{font-weight:600;font-style:italic}
+.about-lead{
+  font-size:21px;
+  font-style:italic;
+  color:var(--ink);
+  margin-bottom:22px;
+  font-weight:300;
+  line-height:1.5;
+  border-left:2px solid var(--ink);
+  padding-left:20px;
+}
+.about-text p{
+  color:var(--ink-soft);
+  margin-bottom:18px;
+  font-size:15.5px;
+  line-height:1.7;
+}
+.about-text p strong{color:var(--ink);font-weight:600}
+.about-credentials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:36px;
+  padding-top:32px;
+  border-top:1px solid var(--gray-200);
+}
+
+/* ===== TEAM CERTIFICAZIONI ===== */
+.team-certs{
+  margin-top:38px;
+  padding:28px 30px;
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius);
+  position:relative;
+}
+.team-certs::before{
+  content:"";position:absolute;top:0;left:30px;
+  width:60px;height:2px;background:var(--brand);
+  border-radius:0 0 4px 4px;
+}
+.team-certs-eyebrow{
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--brand);font-weight:700;margin-bottom:10px;
+}
+.team-certs-head h3{
+  font-size:22px;font-weight:500;letter-spacing:-.02em;
+  color:var(--ink);margin-bottom:10px;line-height:1.25;
+}
+.team-certs-head h3 .italic-em{font-style:italic;font-weight:600}
+.team-certs-head p{
+  font-size:14px;color:var(--ink-soft);line-height:1.6;
+  margin-bottom:22px;
+}
+.certs-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-bottom:18px;
+}
+.cert-badge{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 14px;
+  background:var(--off-white);
+  border:1px solid var(--gray-100);
+  border-radius:10px;
+  transition:all .2s ease;
+}
+.cert-badge:hover{
+  border-color:var(--brand-soft);
+  background:var(--brand-tint);
+  transform:translateY(-1px);
+}
+.cert-badge-logo{
+  flex-shrink:0;width:36px;height:36px;border-radius:8px;
+  background:var(--ink);color:#fff;
+  display:grid;place-items:center;
+}
+.cert-badge-logo svg{width:18px;height:18px}
+.cert-badge-body{min-width:0;flex:1}
+.cert-badge-body strong{
+  display:block;font-size:13px;font-weight:700;color:var(--ink);
+  letter-spacing:-.01em;line-height:1.2;
+}
+.cert-badge-body span{
+  display:block;font-size:11.5px;color:var(--ink-soft);
+  line-height:1.35;margin-top:2px;
+}
+.certs-foot{
+  font-size:12.5px;color:var(--ink-mute);line-height:1.55;
+  padding-top:14px;border-top:1px dashed var(--gray-200);
+  margin-bottom:0;
+}
+.certs-foot strong{color:var(--ink-soft);font-weight:600}
+.cred-label{
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  margin-bottom:6px;
+  font-weight:600;
+}
+.cred-val{
+  font-size:15px;
+  font-weight:500;
+  letter-spacing:-.01em;
+}
+
+.linkedin-trust{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  margin-top:32px;
+  padding:22px 24px;
+  background:var(--off-white);
+  border:1px solid var(--gray-200);
+  border-left:3px solid #0A66C2;
+  border-radius:var(--radius);
+  position:relative;
+}
+.linkedin-trust-icon{
+  flex-shrink:0;
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  background:#0A66C2;
+  color:var(--white);
+  display:grid;
+  place-items:center;
+}
+.linkedin-trust-icon svg{width:20px;height:20px}
+.linkedin-trust-body{flex:1}
+.linkedin-trust-title{
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  margin-bottom:6px;
+  color:var(--ink);
+}
+.linkedin-trust p{
+  font-size:14px;
+  color:var(--ink-soft);
+  line-height:1.65;
+  margin-bottom:14px;
+}
+.linkedin-trust-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--brand);
+  color:var(--white) !important;
+  padding:10px 18px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:600;
+  transition:all .25s ease;
+  text-decoration:none !important;
+}
+.linkedin-trust-btn:hover{
+  background:#0A66C2;
+  transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(10,102,194,.28);
+}
+
+/* ===== FAQ ===== */
+.faq{padding:100px 0;background:var(--white)}
+.faq-filters{
+  display:flex;
+  gap:8px;
+  margin-bottom:40px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.faq-filter{
+  background:transparent;
+  border:1.5px solid var(--gray-200);
+  padding:10px 22px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all .2s ease;
+  font-family:inherit;
+  color:var(--ink-soft);
+  letter-spacing:.01em;
+}
+.faq-filter:hover{border-color:var(--ink);color:var(--ink)}
+.faq-filter.active{background:var(--brand);color:var(--white);border-color:var(--ink)}
+.faq-list{max-width:820px;margin:0 auto}
+.faq-item{
+  background:var(--white);
+  border-radius:var(--radius);
+  margin-bottom:10px;
+  overflow:hidden;
+  transition:all .2s ease;
+  border:1px solid var(--gray-100);
+}
+.faq-item.open{border-color:var(--gray-300);box-shadow:var(--shadow-soft)}
+.faq-q{
+  width:100%;
+  padding:22px 26px;
+  background:none;
+  border:none;
+  text-align:left;
+  font-family:inherit;
+  font-size:16.5px;
+  font-weight:500;
+  color:var(--ink);
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  letter-spacing:-.01em;
+}
+.faq-icon{
+  width:22px;height:22px;
+  flex-shrink:0;
+  position:relative;
+  transition:transform .3s ease;
+}
+.faq-icon::before,.faq-icon::after{
+  content:'';
+  position:absolute;
+  top:50%;left:50%;
+  background:var(--brand);
+  transition:all .3s ease;
+}
+.faq-icon::before{
+  width:13px;height:1.5px;
+  transform:translate(-50%,-50%);
+}
+.faq-icon::after{
+  width:1.5px;height:13px;
+  transform:translate(-50%,-50%);
+}
+.faq-item.open .faq-icon::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .35s ease;
+}
+.faq-item.open .faq-a{max-height:400px}
+.faq-a-inner{
+  padding:0 26px 24px;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.7;
+}
+
+/* ===== CONTACT ===== */
+.contact{padding:120px 0;background:var(--gray-50)}
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:60px;
+  align-items:start;
+}
+.contact-info h2{
+  font-size:clamp(32px,4.2vw,48px);
+  margin-bottom:24px;
+  font-weight:300;
+  letter-spacing:-.03em;
+}
+.contact-info h2 .italic-em{font-weight:600;font-style:italic}
+.contact-info > p{
+  color:var(--ink-soft);
+  margin-bottom:40px;
+  font-size:16.5px;
+  line-height:1.65;
+}
+.contact-method{
+  display:flex;
+  gap:16px;
+  margin-bottom:22px;
+  align-items:flex-start;
+}
+.contact-method-ico{
+  width:44px;height:44px;
+  background:var(--brand);
+  color:var(--white);
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+}
+.contact-method strong{
+  display:block;
+  margin-bottom:2px;
+  font-size:14.5px;
+  font-weight:600;
+}
+.contact-method a,.contact-method span{
+  color:var(--ink-soft);
+  font-size:14px;
+}
+
+.contact-form{
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  padding:40px;
+  box-shadow:var(--shadow-soft);
+  border:1px solid var(--gray-100);
+}
+.form-group{margin-bottom:18px}
+.form-group label{
+  display:block;
+  font-size:12px;
+  font-weight:600;
+  margin-bottom:8px;
+  color:var(--ink);
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+.form-group label .req{color:var(--ink);font-weight:700}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;
+  padding:13px 16px;
+  border:1.5px solid var(--gray-200);
+  border-radius:var(--radius-sm);
+  font-family:inherit;
+  font-size:14.5px;
+  background:var(--white);
+  color:var(--ink);
+  transition:border-color .2s ease;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  outline:none;
+  border-color:var(--ink);
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--gray-400)}
+.form-group textarea{resize:vertical;min-height:90px;font-family:inherit}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-check{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:24px;
+}
+.form-check input{
+  margin-top:2px;
+  width:18px;height:18px;
+  accent-color:var(--ink);
+  flex-shrink:0;
+}
+.form-check label{font-size:13px;color:var(--ink-soft);line-height:1.55;text-transform:none;letter-spacing:0;font-weight:400}
+.form-submit{
+  width:100%;
+  background:var(--brand);
+  color:var(--white);
+  padding:16px;
+  border-radius:100px;
+  border:none;
+  font-family:inherit;
+  font-size:14.5px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+.form-submit:hover{background:var(--brand-hover)}
+.form-success{
+  display:none;
+  text-align:center;
+  padding:40px 20px;
+}
+.form-success.show{display:block}
+.form-success svg{width:48px;height:48px;color:var(--ink);margin-bottom:16px}
+.form-success h3{font-size:22px;margin-bottom:12px;font-weight:600}
+.form-success p{color:var(--ink-soft)}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--brand);
+  color:rgba(255,255,255,.7);
+  padding:60px 0 30px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;
+  margin-bottom:50px;
+}
+.footer-brand{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.footer-brand img{height:44px;background:var(--white);padding:6px;border-radius:6px}
+.footer-brand div{color:var(--white);font-size:17px;font-weight:600;letter-spacing:-.01em}
+.footer-brand small{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:500;margin-top:2px}
+footer h5{
+  color:var(--white);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+  font-weight:600;
+}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:14px}
+footer a{color:rgba(255,255,255,.7)}
+footer a:hover{color:var(--white);text-decoration:none}
+.footer-bottom{
+  padding-top:30px;
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  font-size:12px;
+  color:rgba(255,255,255,.5);
+}
+.compliance-note{
+  font-size:11.5px;
+  color:rgba(255,255,255,.55);
+  max-width:980px;
+  margin:24px auto 0;
+  text-align:center;
+  line-height:1.75;
+  padding:20px 24px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:10px;
+}
+.compliance-note strong{color:rgba(255,255,255,.85);font-weight:600}
+.compliance-note a{
+  color:rgba(255,255,255,.85);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.compliance-note a:hover{color:var(--white)}
+
+/* ===== FLOATING BUTTONS ===== */
+.fab-stack{
+  position:fixed;
+  bottom:28px;
+  right:28px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:90;
+  align-items:center;
+}
+.fab{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--white);
+  cursor:pointer;
+  transition:transform .2s ease;
+  text-decoration:none;
+  border:none;
+  position:relative;
+  font-family:inherit;
+}
+.fab:hover{transform:scale(1.08);text-decoration:none}
+.fab svg{width:30px;height:30px}
+.fab-whatsapp{
+  background:var(--green-wa);
+  box-shadow:0 6px 20px rgba(37,211,102,.35);
+}
+.fab-whatsapp::before{
+  content:'';
+  position:absolute;
+  inset:-4px;
+  border-radius:50%;
+  background:var(--green-wa);
+  opacity:.6;
+  z-index:-1;
+  animation:pulse 2.2s ease-out infinite;
+}
+.fab-contact{
+  background:var(--brand);
+  box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+.fab-contact:hover{background:var(--gray-800)}
+@keyframes pulse{
+  0%{transform:scale(1);opacity:.6}
+  100%{transform:scale(1.5);opacity:0}
+}
+
+/* ===== COOKIE BANNER ===== */
+.cookie-banner{
+  position:fixed;
+  bottom:24px;
+  left:24px;
+  max-width:420px;
+  background:var(--white);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:var(--shadow-deep);
+  z-index:100;
+  border:1px solid var(--gray-100);
+  transform:translateY(120%);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.cookie-banner.show{transform:translateY(0)}
+.cookie-banner-head{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:14px;
+}
+.cookie-ico{
+  width:36px;height:36px;
+  background:var(--brand);
+  color:var(--white);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+  font-size:16px;
+}
+.cookie-banner h4{
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:2px;
+  letter-spacing:-.01em;
+}
+.cookie-banner h4 + small{
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-weight:600;
+}
+.cookie-banner p{
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.6;
+  margin-bottom:14px;
+}
+.cookie-banner-links{
+  display:flex;
+  gap:14px;
+  margin-bottom:18px;
+  font-size:12px;
+}
+.cookie-banner-links a{color:var(--ink);text-decoration:underline;font-weight:500}
+.cookie-banner-btns{display:flex;gap:8px;flex-wrap:wrap}
+.cookie-banner-btns button{
+  padding:10px 16px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  font-family:inherit;
+  border:none;
+  transition:all .2s ease;
+}
+.cookie-reject{background:transparent;color:var(--ink);border:1px solid var(--gray-200) !important}
+.cookie-custom{background:var(--gray-100);color:var(--ink)}
+.cookie-accept{background:var(--brand);color:var(--white);flex:1}
+.cookie-accept:hover{background:var(--brand-hover)}
+
+/* ===== EXIT INTENT MODAL ===== */
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  backdrop-filter:blur(4px);
+}
+.modal-overlay.show{display:flex;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  max-width:500px;
+  width:100%;
+  padding:48px 44px;
+  position:relative;
+  box-shadow:var(--shadow-deep);
+  animation:slideUp .4s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-close{
+  position:absolute;
+  top:18px;right:18px;
+  background:none;
+  border:none;
+  font-size:22px;
+  cursor:pointer;
+  color:var(--ink-mute);
+  width:36px;height:36px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  transition:background .2s ease;
+  font-family:inherit;
+}
+.modal-close:hover{background:var(--gray-100)}
+.modal-eyebrow{
+  text-align:center;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--ink);
+  font-weight:600;
+  margin-bottom:14px;
+}
+.modal h2{
+  font-size:32px;
+  text-align:center;
+  margin-bottom:14px;
+  font-weight:400;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+.modal h2 .italic-em{font-weight:600;font-style:italic}
+.modal > p{
+  text-align:center;
+  font-size:14.5px;
+  color:var(--ink-soft);
+  margin-bottom:28px;
+  line-height:1.6;
+}
+.modal .form-group{margin-bottom:14px}
+.modal .form-group input{padding:14px 16px}
+.modal .form-submit{margin-top:8px}
+.modal-foot{
+  text-align:center;
+  font-size:12px;
+  color:var(--ink-mute);
+  margin-top:14px;
+}
+
+/* ===== POLICY MODAL ===== */
+.policy-modal{
+  background:var(--white);
+  border-radius:var(--radius);
+  max-width:760px;
+  width:100%;
+  max-height:85vh;
+  overflow-y:auto;
+  padding:48px 50px;
+  position:relative;
+}
+.policy-modal h2{
+  font-size:30px;
+  margin-bottom:6px;
+  font-weight:500;
+  letter-spacing:-.025em;
+}
+.policy-modal h3{
+  font-size:17px;
+  margin:28px 0 10px;
+  font-weight:600;
+  letter-spacing:-.01em;
+}
+.policy-modal h4{
+  font-size:14px;
+  margin:18px 0 8px;
+  font-weight:600;
+  letter-spacing:-.005em;
+  color:var(--ink);
+}
+.policy-modal a{
+  color:var(--ink);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.policy-modal a:hover{color:var(--ink-soft)}
+.policy-modal p,.policy-modal li{
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:10px;
+}
+.policy-modal ul{padding-left:22px;margin-bottom:14px}
+.policy-modal .updated{
+  font-size:12px;
+  color:var(--ink-mute);
+  margin-bottom:30px;
+  display:block;
+  font-weight:500;
+}
+
+/* ===== NEW / UPDATED COMPONENTS ===== */
+.how-quote{
+  font-style:italic;
+  font-size:18px;
+  color:var(--ink);
+  line-height:1.55;
+  padding:14px 0 14px 20px;
+  border-left:3px solid var(--ink);
+  margin-bottom:24px;
+  font-weight:300;
+  letter-spacing:-.005em;
+}
+.how-quote strong{font-weight:600}
+
+.inline-linkedin{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  color:#0A66C2 !important;
+  font-weight:600;
+  text-decoration:underline !important;
+  text-underline-offset:2px;
+}
+.inline-linkedin svg{vertical-align:-2px}
+.inline-linkedin:hover{color:#084d92 !important}
+
+.contact-form-intro{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  margin-bottom:24px;
+  line-height:1.6;
+  padding:14px 18px;
+  background:var(--off-white);
+  border-left:3px solid var(--ink);
+  border-radius:0 8px 8px 0;
+}
+.contact-form-intro strong{color:var(--ink);font-weight:600}
+
+.form-foot-note{
+  font-size:12.5px;
+  color:var(--ink-mute);
+  text-align:center;
+  margin-top:14px;
+  line-height:1.5;
+}
+
+/* ===== RISULTATO CONFIGURATORE — MIGLIORATO ===== */
+.result-profile-name{
+  display:inline-block;
+  background:var(--brand);
+  color:var(--white);
+  padding:6px 14px;
+  border-radius:100px;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+  font-weight:600;
+}
+.result-headline{
+  font-size:34px;
+  font-weight:500;
+  margin-bottom:14px;
+  line-height:1.2;
+  letter-spacing:-.025em;
+  color:var(--ink);
+}
+.result-profile-tagline{
+  font-size:16px;
+  color:var(--ink-soft);
+  margin-bottom:24px;
+  line-height:1.6;
+  max-width:640px;
+}
+
+.alloc-row{
+  display:grid;
+  grid-template-columns:14px 1fr auto;
+  align-items:center;
+  padding:11px 0;
+  font-size:14.5px;
+  font-weight:500;
+  gap:12px;
+}
+.alloc-row .alloc-dot{
+  width:12px;height:12px;
+  border-radius:3px;
+  flex-shrink:0;
+}
+.alloc-dot.dot-equity{background:#0A0A0A}
+.alloc-dot.dot-bond{background:#525252}
+.alloc-dot.dot-alt{background:#C68B3F}
+.alloc-dot.dot-gold{background:#E5B255}
+.alloc-dot.dot-cash{background:#C7C7C7}
+
+.alloc-bar{
+  width:100%;height:14px;
+  background:var(--gray-100);
+  border-radius:7px;
+  overflow:hidden;
+  display:flex;
+}
+.alloc-bar-title{
+  font-size:10px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-weight:600;
+  margin-top:22px;
+  margin-bottom:10px;
+}
+.alloc-seg{height:100%;transition:width .4s ease}
+.seg-equity{background:#0A0A0A}
+.seg-bond{background:#525252}
+.seg-alt{background:#C68B3F}
+.seg-gold{background:#E5B255}
+.seg-cash{background:#C7C7C7}
+
+.alloc-legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px 18px;
+  margin-top:14px;
+  font-size:12px;
+  color:var(--ink-mute);
+}
+.alloc-legend-item{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.alloc-legend-item .alloc-dot{
+  width:10px;height:10px;
+  border-radius:2px;
+}
+
+/* ===== ADJUSTMENTS RIDISEGNO BRAND ===== */
+.footer-grid{grid-template-columns:2fr 1fr 1fr !important;gap:50px}
+@media (max-width:780px){.footer-grid{grid-template-columns:1fr !important;gap:32px !important}}
+.footer-bottom{flex-direction:row;align-items:center}
+@media (max-width:680px){.footer-bottom{flex-direction:column;align-items:flex-start;gap:10px}.footer-bottom p:first-child{font-size:12px}}
+.footer-bottom a{color:rgba(255,255,255,.6);font-size:12px;text-decoration:none}
+.footer-bottom a:hover{color:var(--white)}
+
+/* numeri animazione + countup */
+.num-val{opacity:0;transform:translateY(8px);transition:opacity .6s ease, transform .6s ease}
+.num-val.in{opacity:1;transform:translateY(0)}
+
+/* badges live brand */
+.config-live-tag{background:var(--brand-tint) !important;color:var(--brand) !important;border:1px solid var(--brand-soft)}
+.live-dot{background:var(--brand) !important}
+
+/* for-card featured con bordo brand */
+.for-card.featured{border-color:var(--brand) !important}
+.for-card-tag{background:var(--brand) !important;color:var(--white) !important}
+
+/* faq-icon brand */
+.faq-q{transition:color .15s ease}
+.faq-q:hover{color:var(--brand)}
+
+/* btn-secondary hover diventa brand-tint */
+.btn-secondary:hover{border-color:var(--brand) !important;color:var(--brand) !important}
+
+/* nav cta hover OK già fatto */
+.nav-cta{background:var(--brand)}
+
+/* fab-contact brand */
+.fab-contact{background:var(--brand) !important}
+.fab-contact:hover{background:var(--brand-hover) !important}
+
+/* inline brand */
+::selection{background:var(--brand);color:var(--white)}
+
+/* ===== RESPONSIVE: nuova schema metodo & certificazioni ===== */
+@media (max-width:900px){
+  .about-img{
+    position:static;
+    padding:30px 24px;
+  }
+  .method-schema-h{font-size:20px}
+  .certs-grid{grid-template-columns:repeat(2,1fr)}
+  .team-certs{padding:24px 22px}
+}
+@media (max-width:640px){
+  .about-img{padding:26px 20px}
+  .method-schema-title{font-size:10px}
+  .method-schema-h{font-size:18px;margin-bottom:20px}
+  .method-step{padding:12px 12px;gap:12px}
+  .method-step-num{width:34px;height:34px;font-size:14px}
+  .method-step-title{font-size:13.5px}
+  .method-step-desc{font-size:12px}
+  .method-step-tag{font-size:9px;padding:2px 7px;margin-top:6px}
+  .method-output{padding:12px 14px;gap:10px;margin-top:14px}
+  .method-output-ico{width:30px;height:30px}
+  .method-output-ico svg{width:16px;height:16px}
+  .method-output-text{font-size:12px}
+  .method-output-text strong{font-size:13px}
+  .team-certs{padding:22px 20px;margin-top:30px}
+  .team-certs-head h3{font-size:19px}
+  .team-certs-head p{font-size:13.5px}
+  .certs-grid{grid-template-columns:1fr;gap:8px}
+  .cert-badge{padding:11px 12px;gap:11px}
+  .cert-badge-logo{width:34px;height:34px;border-radius:7px}
+  .cert-badge-logo svg{width:16px;height:16px}
+  .cert-badge-body strong{font-size:12.5px}
+  .cert-badge-body span{font-size:11px}
+  .certs-foot{font-size:11.5px}
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1024px){
+  .hero-grid{gap:50px}
+  .how-grid{gap:40px}
+  .about-grid{gap:50px}
+  .nav-links{gap:18px}
+  .nav-links a{font-size:13px}
+}
+@media (max-width:1100px){
+  .for-grid{grid-template-columns:repeat(2,1fr);gap:20px;max-width:760px;margin:50px auto 0}
+}
+@media (max-width:900px){
+  /* il menu di navigazione desktop scompare su mobile */
+  .nav-links{display:none}
+  .hero-grid,.how-grid,.about-grid,.contact-grid,.result-grid{grid-template-columns:1fr;gap:40px}
+  /* Su mobile: form prima dei metodi di contatto.
+     "Appiattisco" .contact-info nella griglia e riordino i figli con order. */
+  .contact-info{display:contents}
+  .contact-info .hero-eyebrow{order:1}
+  .contact-info h2{order:2}
+  .contact-info > p{order:3;margin-bottom:0}
+  .contact-form{order:4}
+  .contact-methods{order:5;margin-top:8px}
+  .for-grid{grid-template-columns:1fr;max-width:560px}
+  .scenarios{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .hero{padding:50px 0 80px}
+  section{padding:70px 0}
+  .config-body,.config-result{padding:32px 24px}
+  .hero-visual{max-width:480px;margin:0 auto;min-height:auto}
+  .nav-cta{
+    padding:0 16px;
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+  }
+  .cookie-banner{left:12px;right:12px;bottom:12px;max-width:none}
+  .fab-stack{bottom:90px;right:18px}
+  .cookie-banner.show ~ .fab-stack{bottom:20px}
+  .modal{padding:36px 28px}
+  .policy-modal{padding:32px 24px}
+  .about-credentials{grid-template-columns:repeat(2,1fr);gap:20px}
+  .fee-card{padding:36px 28px}
+  .result-cta-box{padding:28px 22px}
+  .contact-form{padding:32px 24px}
+  .nav-logo img{height:34px}
+  .nav-logo-text{font-size:14px}
+  .nav-logo-text small{font-size:9px}
+  footer{padding:50px 0 24px}
+  .faq-filter{padding:8px 16px;font-size:12px}
+  .configurator{padding:70px 0}
+  .config-live-tag{font-size:10px;padding:6px 12px 6px 11px;letter-spacing:.12em}
+  .config-next{padding:14px 28px;font-size:14px}
+  .how-quote{font-size:16px;padding:10px 0 10px 16px;margin-bottom:20px}
+  .result-headline{font-size:28px}
+  /* Scenari: confronto inflazione su mobile */
+  .scenario.low,.scenario.high{border-left-width:3px;padding-left:18px}
+  .scenario-compare{margin-top:14px;padding-top:12px}
+  .scenario-compare-value{font-size:17px}
+}
+@media (max-width:640px){
+  .container{padding:0 18px}
+  .nav-inner{padding:14px 18px;gap:12px}
+  .nav-cta{padding:0 14px;height:34px;line-height:34px;font-size:11.5px}
+  .hero{padding:32px 0 70px}
+  .hero h1{font-size:38px;line-height:1.15}
+  .hero-sub{font-size:16px}
+  .hero-eyebrow{font-size:10px;margin-bottom:20px}
+  .hero-ctas{flex-direction:column;align-items:stretch;width:100%}
+  .hero-ctas .btn-primary,.hero-ctas .btn-secondary{justify-content:center;width:100%;padding:14px 22px}
+  .hero-card-val{font-size:18px}
+  section{padding:60px 0}
+  .section-title{font-size:30px}
+  .section-sub{font-size:15px;margin-bottom:40px}
+  .for-card{padding:28px 22px}
+  .for-card h3{font-size:19px;margin:14px 0 10px}
+  .for-card-num{font-size:36px}
+  .for-card-header{gap:12px}
+  .for-card-header .for-card-tag{font-size:9.5px;letter-spacing:.12em;padding:4px 9px;margin-top:10px}
+  .config-question{font-size:22px}
+  .config-help{font-size:14px;margin-bottom:28px}
+  .config-body,.config-result{padding:28px 20px}
+  .config-option{padding:14px 16px;font-size:14px}
+  .config-option-text strong{font-size:14px}
+  .config-option-text small{font-size:12px}
+  .config-slider-value{font-size:38px}
+  .config-nav{gap:8px;margin-top:24px}
+  .config-back{font-size:13px}
+  .config-next{padding:13px 22px;font-size:13.5px}
+  .result-headline{font-size:24px}
+  .result-profile-tagline{font-size:14.5px}
+  .result-cta-box h3{font-size:22px}
+  .result-cta-box{padding:24px 18px}
+  .scenario-value{font-size:22px}
+  .scenario-compare{margin-top:12px;padding-top:10px}
+  .scenario-compare-label{font-size:9px;letter-spacing:.1em}
+  .scenario-compare-value{font-size:16px}
+  .scenario-compare-delta{font-size:10px}
+  .how-text h2,.about-text h2,.contact-info h2{font-size:30px}
+  .how-points li{padding:18px 0;gap:14px}
+  .how-points-icon{width:38px;height:38px}
+  .how-points-icon svg{width:18px;height:18px}
+  .how-points-content > strong{font-size:14.5px}
+  .how-points-content span{font-size:13.5px}
+  .about-lead{font-size:18px;padding-left:16px}
+  .about-text p{font-size:14.5px}
+  .fee-card h3{font-size:26px}
+  .fee-card{padding:30px 22px}
+  .faq-filters{gap:6px;margin-bottom:30px}
+  .faq-filter{padding:8px 14px;font-size:11.5px;letter-spacing:0}
+  .faq-q{font-size:15px;padding:18px 20px}
+  .faq-a-inner{padding:0 20px 20px;font-size:14px}
+  .contact-form{padding:24px 20px}
+  .contact-form-intro{font-size:13.5px;padding:12px 14px;margin-bottom:20px}
+  .contact-method{margin-bottom:18px;gap:14px}
+  .contact-method-ico{width:40px;height:40px}
+  .form-group input,.form-group select,.form-group textarea{font-size:14px;padding:12px 14px}
+  .form-check label{font-size:12.5px;line-height:1.5}
+  .nav-logo-text small{display:none}
+  .hero-trust{font-size:10px;padding:8px 16px;letter-spacing:.08em}
+  .fab{width:54px;height:54px}
+  .fab svg{width:26px;height:26px}
+  .modal{padding:30px 22px}
+  .modal h2{font-size:26px}
+  .cookie-banner{padding:18px}
+  .cookie-banner h4{font-size:14px}
+  .cookie-banner p{font-size:12px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;font-size:11px}
+  .compliance-note{
+    font-size:11px;
+    padding:16px 18px;
+    line-height:1.7;
+    margin-top:20px;
+  }
+  .alloc-legend{gap:8px 12px;font-size:11px}
+  .alloc-row{font-size:13.5px}
+}
+@media (max-width:400px){
+  .hero h1{font-size:32px}
+  .section-title{font-size:26px}
+  .about-credentials{grid-template-columns:1fr;gap:18px}
+  .hero-trust{font-size:9.5px;padding:7px 14px}
+  .faq-filter{padding:7px 12px;font-size:11px}
+  .for-card{padding:24px 20px}
+  .for-card-header{gap:10px}
+  .for-card-header .for-card-tag{font-size:9px;padding:3px 8px}
+  .config-live-tag{font-size:9.5px;padding:5px 10px;letter-spacing:.1em}
+  .config-next{padding:12px 20px;font-size:13px}
+  .config-back{font-size:12px}
+  .nav-logo img{height:30px}
+  .nav-logo-text{font-size:13px}
+  .nav-cta{padding:0 12px;height:32px;line-height:32px;font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <svg class="nav-logo-mark" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="44" height="44" rx="10" fill="#4F5AB7"/>
+        <path d="M11 30 L17 14 L23 30 M13.5 25 H20.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M28 14 V30 M28 14 H32 M28 30 H32" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text">
+        AI per Aziende
+        <small>Consulenza AI per imprese</small>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servizi">Cosa facciamo</a></li>
+      <li><a href="#stima">Stima impatto</a></li>
+      <li><a href="#come-lavoriamo">Come lavoriamo</a></li>
+      <li><a href="#metodo">Metodo</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contatti" class="nav-cta">Prenota una call</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Consulenza AI per imprese · On-demand</div>
+        <h1>
+          Forma il tuo team all'AI. Fai in <span class="italic-em">mezza giornata</span> il lavoro di una settimana.
+        </h1>
+        <p class="hero-sub">
+          Affianchiamo le aziende italiane nell'uso pratico dell'AI su <strong>marketing, vendite, operations, amministrazione</strong>. Il tuo team smette di affogare nelle attività ripetitive e <strong>torna al lavoro strategico</strong> — con competenze prima da outsourcing, ora in casa.
+        </p>
+        <div class="hero-ctas">
+          <a href="#stima" class="btn-primary">
+            Stima l'impatto sul tuo team
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contatti" class="btn-secondary">Prenota una call</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-label">Da 5 giorni a mezza giornata</div>
+          <div class="hero-card-val">Recuperi <span class="italic-em">tempo strategico</span><small>il team torna a pensare, non solo a eseguire</small></div>
+        </div>
+        <div class="hero-card accent">
+          <div class="hero-card-label">On-demand, senza vincoli</div>
+          <div class="hero-card-val">Paghi <strong>a ora</strong><small>nessun abbonamento, nessun piano imposto</small></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-label">Competenze on-demand</div>
+          <div class="hero-card-val">Skill prima da <span class="italic-em">outsourcing</span><small>data, copy, design, automation in casa tua</small></div>
+        </div>
+        <div class="hero-trust">
+          <span class="dot"></span>
+          PM dedicato all'implementazione
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NUMERI ===== -->
+<section class="numbers-strip">
+  <style>
+    .numbers-strip{padding:50px 0;background:var(--off-white);border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100)}
+    .numbers-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;align-items:start}
+    .num-item{text-align:center;padding:0 12px}
+    .num-val{font-size:52px;font-weight:700;letter-spacing:-.035em;color:var(--brand);line-height:1;font-variant-numeric:tabular-nums;margin-bottom:10px}
+    .num-val span{font-weight:700;font-size:34px;vertical-align:top;margin-left:-1px}
+    .num-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;line-height:1.4}
+    @media (max-width:900px){
+      .numbers-grid{grid-template-columns:repeat(2,1fr);gap:32px 20px}
+      .num-val{font-size:40px;font-weight:700}
+      .num-val span{font-size:26px;font-weight:700}
+    }
+    @media (max-width:480px){
+      .numbers-grid{gap:28px 14px}
+      .num-val{font-size:34px}
+      .num-val span{font-size:22px}
+      .num-label{font-size:10px;letter-spacing:.14em}
+    }
+  </style>
+  <div class="container">
+    <div class="numbers-grid">
+      <div class="num-item">
+        <div class="num-val" data-target="120">0<span>+</span></div>
+        <div class="num-label">Aziende affiancate</div>
+      </div>
+      <div class="num-item">
+        <div class="num-val" data-target="950">0<span>+</span></div>
+        <div class="num-label">Persone formate</div>
+      </div>
+      <div class="num-item">
+        <div class="num-val" data-target="1800">0<span>+</span></div>
+        <div class="num-label">Ore di consulenza</div>
+      </div>
+      <div class="num-item">
+        <div class="num-val" data-target="98">0<span>%</span></div>
+        <div class="num-label">Soddisfazione team</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COSA FACCIAMO ===== -->
+<section class="for-whom" id="servizi">
+  <div class="container">
+    <div class="section-eyebrow">Cosa facciamo</div>
+    <h2 class="section-title">Quattro aree dove l'AI <span class="italic-em">cambia davvero le carte in tavola</span>.</h2>
+    <div class="for-grid">
+      <div class="for-card">
+        <div class="for-card-num">01</div>
+        <h3>Marketing &amp; Contenuti</h3>
+        <p>Brief, post social, articoli, email, immagini e video brevi. Definiamo la <strong>brand voice</strong> del tuo team in prompt riutilizzabili, costruiamo un sistema per <strong>generare contenuti coerenti e a scala</strong>, riduciamo del 60-80% il tempo speso in produzione editoriale. Coinvolgiamo i tool giusti (ChatGPT, Claude, Gemini, Midjourney, generatori video) <strong>senza vincolarti a nessuno</strong>.</p>
+      </div>
+      <div class="for-card">
+        <div class="for-card-num">02</div>
+        <h3>Vendite &amp; Cliente</h3>
+        <p>Outreach personalizzato a scala, <strong>arricchimento liste lead</strong>, qualifica automatica, risposte a gare/RFP, follow-up multi-touch, knowledge base per il customer service. Il commerciale smette di copiare-e-incollare e <strong>torna a parlare con i clienti</strong>. Integrabile con il tuo CRM (HubSpot, Salesforce, Pipedrive) o con fogli Google.</p>
+      </div>
+      <div class="for-card">
+        <div class="for-card-num">03</div>
+        <h3>Operations &amp; Processi</h3>
+        <p>Automazione delle attività ripetitive: smistamento email, compilazione documenti, <strong>knowledge base interna</strong> interrogabile in linguaggio naturale, chatbot per HR e supporto interno, generazione di SOP e procedure. Uso intensivo di <strong>n8n, Make, Zapier</strong> dove serve davvero un'orchestrazione tra strumenti diversi.</p>
+      </div>
+      <div class="for-card featured">
+        <div class="for-card-header">
+          <div class="for-card-num">04</div>
+          <span class="for-card-tag">Sottovalutato</span>
+        </div>
+        <h3>Amministrazione &amp; Finance</h3>
+        <p>Estrazione automatica di dati da <strong>fatture, contratti, scontrini, PDF</strong>, riconciliazioni bancarie assistite, reportistica gestionale in linguaggio naturale, gestione richieste interne. Materia che <strong>fa risparmiare ore ogni settimana</strong> alle aziende che non hanno un ERP enterprise — e che pochi consulenti tradizionali sanno toccare con la giusta attenzione alla compliance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STIMA IMPATTO ===== -->
+<section class="configurator" id="stima">
+  <style>
+    .stim-intro{max-width:680px;margin:0 auto 40px;text-align:center}
+    .stim-step{margin-bottom:32px}
+    .stim-step-label{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--brand);margin-bottom:14px}
+    .stim-step-num{width:24px;height:24px;border-radius:50%;background:var(--brand);color:var(--white);display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:0}
+    .stim-step h3{font-size:21px;font-weight:500;letter-spacing:-.01em;margin-bottom:6px;color:var(--ink)}
+    .stim-step-help{font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin-bottom:20px}
+    .stim-task-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .stim-task{position:relative;display:flex;gap:14px;align-items:flex-start;padding:18px 18px 18px 18px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:14px;cursor:pointer;transition:all .2s ease}
+    .stim-task:hover{border-color:var(--brand-soft);background:var(--brand-tint)}
+    .stim-task input{position:absolute;opacity:0;pointer-events:none}
+    .stim-task-check{width:22px;height:22px;border-radius:6px;border:2px solid var(--gray-300);flex-shrink:0;display:grid;place-items:center;background:var(--white);transition:all .2s ease;margin-top:2px}
+    .stim-task-check svg{width:14px;height:14px;color:var(--white);opacity:0;transform:scale(.5);transition:all .15s ease}
+    .stim-task input:checked + .stim-task-check{background:var(--brand);border-color:var(--brand)}
+    .stim-task input:checked + .stim-task-check svg{opacity:1;transform:scale(1)}
+    .stim-task.selected{border-color:var(--brand);background:var(--brand-tint)}
+    .stim-task-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:0}
+    .stim-task-title{display:block;font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:3px;line-height:1.35}
+    .stim-task-area{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--brand);margin-bottom:6px}
+    .stim-task-desc{display:block;font-size:13px;color:var(--ink-soft);line-height:1.45}
+    .stim-result{margin-top:40px;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-hover) 100%);color:var(--white);border-radius:20px;padding:48px 32px 38px;text-align:center;position:relative;overflow:hidden}
+    .stim-result::before{content:"";position:absolute;top:-50%;right:-20%;width:60%;height:200%;background:radial-gradient(circle at center, rgba(255,255,255,0.10) 0%, transparent 60%);pointer-events:none}
+    .stim-result::after{content:"";position:absolute;bottom:-40%;left:-10%;width:50%;height:120%;background:radial-gradient(circle at center, rgba(255,255,255,0.06) 0%, transparent 60%);pointer-events:none}
+    .stim-result-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.85);font-weight:700;margin-bottom:24px;position:relative}
+    .stim-result-numbers{display:flex;align-items:stretch;justify-content:center;gap:0;margin-bottom:28px;position:relative;flex-wrap:nowrap}
+    .stim-result-big{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 36px;position:relative;min-width:0;flex:1;max-width:300px}
+    .stim-result-big + .stim-result-big::before{
+      content:"";position:absolute;left:0;top:15%;bottom:15%;width:1px;
+      background:linear-gradient(to bottom, transparent 0%, rgba(255,255,255,.35) 50%, transparent 100%);
+    }
+    .stim-result-val{font-size:88px;font-weight:700;letter-spacing:-.045em;line-height:1;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.18);transition:transform .25s ease}
+    .stim-result-val.bump{transform:scale(1.06)}
+    .stim-result-cap{font-size:11px;color:rgba(255,255,255,.9);margin-top:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+    .stim-result-sep{display:none}
+    .stim-result-reco{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:20px 24px;margin:0 auto 28px;max-width:580px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.96);position:relative;text-align:left;backdrop-filter:blur(6px)}
+    .stim-result-reco strong{color:var(--white);font-weight:700}
+    .stim-result-empty{color:rgba(255,255,255,.85);font-style:italic;display:block;padding:8px 0;font-size:14px;text-align:center}
+    .stim-cta{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--brand);padding:16px 34px;border-radius:99px;font-weight:700;font-size:15px;text-decoration:none;transition:all .2s ease;position:relative;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+    .stim-cta:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.28);text-decoration:none;color:var(--brand-hover)}
+    .stim-people-bar{background:var(--off-white);border:1.5px solid var(--gray-100);border-radius:14px;padding:24px 28px}
+    .stim-people-value{font-size:28px;font-weight:300;letter-spacing:-.02em;color:var(--brand);margin-bottom:14px;font-variant-numeric:tabular-nums}
+    .stim-people-value strong{font-weight:600}
+    .stim-people-slider{width:100%;-webkit-appearance:none;appearance:none;height:8px;border-radius:99px;background:linear-gradient(to right, var(--brand) var(--p,10%), var(--gray-200) var(--p,10%));outline:none;cursor:pointer}
+    .stim-people-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;background:var(--white);border:3px solid var(--brand);cursor:grab;box-shadow:0 4px 12px rgba(79,90,183,.3);transition:transform .15s ease}
+    .stim-people-slider::-webkit-slider-thumb:hover{transform:scale(1.15)}
+    .stim-people-slider::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--white);border:3px solid var(--brand);cursor:grab;box-shadow:0 4px 12px rgba(79,90,183,.3)}
+    .stim-people-scale{display:flex;justify-content:space-between;margin-top:10px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);font-weight:500}
+    @media (max-width:900px){
+      .stim-task-grid{grid-template-columns:1fr}
+      .stim-result{padding:38px 24px 32px}
+      .stim-result-val{font-size:64px}
+      .stim-result-numbers{gap:0;flex-direction:column;align-items:stretch}
+      .stim-result-big{padding:18px 0;max-width:none}
+      .stim-result-big + .stim-result-big::before{
+        left:25%;right:25%;top:auto;bottom:auto;width:auto;height:1px;
+        background:linear-gradient(to right, transparent 0%, rgba(255,255,255,.35) 50%, transparent 100%);
+      }
+      .stim-step h3{font-size:18.5px}
+      .stim-step-help{font-size:13.5px}
+    }
+    @media (max-width:640px){
+      .stim-step{margin-bottom:26px}
+      .stim-step h3{font-size:17px;line-height:1.35}
+      .stim-task{padding:14px 14px;gap:11px}
+      .stim-task-check{width:20px;height:20px}
+      .stim-task-title{font-size:14px}
+      .stim-task-desc{font-size:12.5px}
+      .stim-task-area{font-size:10px}
+      .stim-people-bar{padding:20px 22px}
+      .stim-people-value{font-size:24px}
+      .stim-result{padding:32px 20px 26px}
+      .stim-result-label{font-size:10px;margin-bottom:18px;letter-spacing:.18em}
+      .stim-result-val{font-size:54px;letter-spacing:-.04em}
+      .stim-result-cap{font-size:10px;margin-top:8px}
+      .stim-result-reco{padding:16px 18px;font-size:13.5px;line-height:1.55}
+      .stim-cta{padding:14px 26px;font-size:14px;width:100%;justify-content:center}
+    }
+  </style>
+  <div class="container">
+    <div class="config-live-tag-wrap">
+      <span class="config-live-tag"><span class="live-dot"></span>Stima interattiva</span>
+    </div>
+    <div class="section-eyebrow">Stima impatto</div>
+    <h2 class="section-title">Da quante ore di lavoro ripetitivo <span class="italic-em">vuoi liberare il tuo team</span>?</h2>
+    <p class="stim-intro section-sub">Indica la dimensione del team e i task che oggi vi rubano più tempo. In <strong>meno di 30 secondi</strong> vedi quante ore al mese e all'anno potresti recuperare — e in quale area conviene partire per primi.</p>
+
+    <div class="config-box">
+      <div class="config-body">
+
+        <div class="stim-step">
+          <div class="stim-step-label">
+            <span class="stim-step-num">1</span>
+            Il tuo team
+          </div>
+          <h3>Quante persone, nel tuo team, lavorano ogni giorno al computer?</h3>
+          <p class="stim-step-help">Includi solo chi usa email, documenti, fogli di calcolo o gestionali nel quotidiano — sono loro che traggono il massimo beneficio dall'AI.</p>
+          <div class="stim-people-bar">
+            <div class="stim-people-value"><strong id="stimPeople">10</strong> persone</div>
+            <input type="range" class="stim-people-slider" id="stimPeopleSlider" min="1" max="100" step="1" value="10">
+            <div class="stim-people-scale"><span>1</span><span>50</span><span>100+</span></div>
+          </div>
+        </div>
+
+        <div class="stim-step">
+          <div class="stim-step-label">
+            <span class="stim-step-num">2</span>
+            Dove perdete tempo
+          </div>
+          <h3>Su quali attività il tuo team passa più ore ogni settimana?</h3>
+          <p class="stim-step-help">Seleziona tutte le voci che riconosci. Sono attività dove, applicando l'AI nel modo giusto, <strong>il tempo si riduce del 50–80%</strong> — e il tuo team torna a dedicarsi alle decisioni che contano.</p>
+
+          <div class="stim-task-grid">
+            <label class="stim-task" data-pct="0.18">
+              <input type="checkbox" data-pct="0.18">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="marketing">Marketing</span>
+                <span class="stim-task-title">Contenuti, copy e creatività</span>
+                <span class="stim-task-desc">Post social, articoli, email, brief creativi, immagini</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.15">
+              <input type="checkbox" data-pct="0.15">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="vendite">Vendite</span>
+                <span class="stim-task-title">Outreach &amp; follow-up commerciale</span>
+                <span class="stim-task-desc">Cold email personalizzate, sequenze, qualifica lead</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.12">
+              <input type="checkbox" data-pct="0.12">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="vendite">Vendite</span>
+                <span class="stim-task-title">Preventivi, gare e RFP</span>
+                <span class="stim-task-desc">Documenti tecnico-commerciali da riadattare ogni volta</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.15">
+              <input type="checkbox" data-pct="0.15">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="amministrazione">Amministrazione</span>
+                <span class="stim-task-title">Estrazione dati da PDF e fatture</span>
+                <span class="stim-task-desc">Data entry, riconciliazioni bancarie, lettura contratti</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.10">
+              <input type="checkbox" data-pct="0.10">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="amministrazione">Amministrazione</span>
+                <span class="stim-task-title">Report &amp; analisi gestionali</span>
+                <span class="stim-task-desc">Sintesi mensili, KPI, dashboard, slide per il CdA</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.14">
+              <input type="checkbox" data-pct="0.14">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="operations">Operations</span>
+                <span class="stim-task-title">Smistamento email e richieste</span>
+                <span class="stim-task-desc">Triage interno, ticketing, classificazione automatica</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.12">
+              <input type="checkbox" data-pct="0.12">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="operations">Operations</span>
+                <span class="stim-task-title">Procedure, SOP e knowledge base</span>
+                <span class="stim-task-desc">Manuali interni, onboarding, una "ChatGPT" aziendale</span>
+              </span>
+            </label>
+
+            <label class="stim-task" data-pct="0.13">
+              <input type="checkbox" data-pct="0.13">
+              <span class="stim-task-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span class="stim-task-body">
+                <span class="stim-task-area" data-area="operations">Operations</span>
+                <span class="stim-task-title">Ricerca, analisi e prep meeting</span>
+                <span class="stim-task-desc">Studi competitor, sintesi documenti, brief per riunioni</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="stim-result">
+        <div class="stim-result-label">Ore di lavoro ripetitivo che puoi liberare</div>
+        <div class="stim-result-numbers">
+          <div class="stim-result-big">
+            <div class="stim-result-val" id="stimHoursMonth">—</div>
+            <div class="stim-result-cap">ore al mese</div>
+          </div>
+          <div class="stim-result-big">
+            <div class="stim-result-val" id="stimHoursYear">—</div>
+            <div class="stim-result-cap">ore all'anno</div>
+          </div>
+        </div>
+        <div class="stim-result-reco" id="stimReco">
+          <span class="stim-result-empty">Seleziona almeno un task per scoprire quante ore puoi liberare — e in quale area conviene partire.</span>
+        </div>
+        <a href="#contatti" class="stim-cta">
+          Voglio approfondire con una call
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASI D'USO ===== -->
+<section class="usecases">
+  <style>
+    .usecases{padding:90px 0;background:var(--white)}
+    .usecases-intro{max-width:680px;margin:0 auto 50px;text-align:center}
+    .uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .uc-card{background:var(--white);border:1.5px solid var(--gray-100);border-radius:18px;padding:28px;transition:all .25s ease}
+    .uc-card:hover{border-color:var(--gray-200);transform:translateY(-3px);box-shadow:var(--shadow-med)}
+    .uc-ico{width:42px;height:42px;border-radius:11px;background:var(--brand-tint);color:var(--brand);display:grid;place-items:center;margin-bottom:18px}
+    .uc-ico svg{width:22px;height:22px}
+    .uc-area{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);font-weight:600;margin-bottom:10px}
+    .uc-card h3{font-size:18px;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:12px;line-height:1.4}
+    .uc-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;margin-bottom:16px}
+    .uc-impact{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-tint);padding:8px 14px;border-radius:99px;letter-spacing:.01em}
+    .uc-impact svg{width:14px;height:14px}
+    @media (max-width:1024px){.uc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:680px){.uc-grid{grid-template-columns:1fr}.usecases{padding:60px 0}}
+  </style>
+  <div class="container">
+    <div class="usecases-intro">
+      <div class="section-eyebrow">Casi d'uso reali</div>
+      <h2 class="section-title">Quello che il tuo team <span class="italic-em">saprà fare già dalla settimana dopo</span>.</h2>
+      <p class="section-sub">Esempi concreti di workflow che attiviamo con i team che affianchiamo. Niente teoria astratta — sono trasformazioni misurabili nei tempi di lavoro quotidiani.</p>
+    </div>
+
+    <div class="uc-grid">
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="uc-area">Marketing</div>
+        <h3>Brief creativo &amp; primo draft di un post in 5 minuti</h3>
+        <p>Il marketing manager inserisce obiettivo, target e canale: l'AI restituisce brief strutturato, prima stesura e variazioni A/B. Pronto da rifinire, non da scrivere da zero.</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>Da 60' a 5' per contenuto</span>
+      </div>
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="uc-area">Vendite</div>
+        <h3>100 email outreach personalizzate in un'ora</h3>
+        <p>Il commerciale carica la lista lead da LinkedIn o CRM: l'AI ricerca contesto, genera apertura su misura, propone follow-up. Niente più copia-incolla, niente più email impersonali.</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>10x più lead contattati</span>
+      </div>
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14 2 14 8 20 8"/><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+        </div>
+        <div class="uc-area">Amministrazione</div>
+        <h3>Estrazione dati da 200 fatture in 10 minuti</h3>
+        <p>Si carica una cartella di PDF: l'AI legge, estrae voci, fornitori, importi, scadenze e li mette in Excel pronti per il gestionale. Riconciliazioni che richiedevano una giornata, in mezza pausa caffè.</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>Da 8h a 10' per ciclo</span>
+      </div>
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="uc-area">Operations</div>
+        <h3>Knowledge base interrogabile in linguaggio naturale</h3>
+        <p>Tutta la documentazione interna — procedure, manuali, contratti, FAQ — diventa una "ChatGPT interna" che risponde alle domande del team. Il nuovo assunto smette di disturbare i colleghi senior.</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>-70% tempo onboarding</span>
+      </div>
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div class="uc-area">Vendite</div>
+        <h3>Risposte a gare e RFP partendo dai documenti aziendali</h3>
+        <p>L'AI legge il capitolato del cliente, lo confronta con i tuoi case study e la tua expertise, costruisce la prima bozza di risposta su misura. Il commerciale rifinisce, non scrive da zero.</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>3 gare al posto di 1</span>
+      </div>
+
+      <div class="uc-card">
+        <div class="uc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <div class="uc-area">Amministrazione</div>
+        <h3>Report direzionale automatico ogni lunedì</h3>
+        <p>Si collegano i tuoi gestionali / fogli / CRM: ogni inizio settimana ricevi un report sintetico con KPI, trend, anomalie e azioni suggerite. Niente più "preparami il riassunto per il CdA".</p>
+        <span class="uc-impact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>4h al mese liberate</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COME LAVORIAMO ===== -->
+<section class="how" id="come-lavoriamo">
+  <div class="container">
+    <div class="how-grid">
+      <div class="how-text">
+        <div class="hero-eyebrow">Come lavoriamo</div>
+        <h2>Tre passi semplici, <span class="italic-em">nessun piano lungo da firmare</span>.</h2>
+        <p class="how-quote">«La differenza tra sapere cosa fa l'AI e <strong>usarla davvero</strong> in azienda sta nella settimana dopo la consulenza.»</p>
+        <p>Niente percorsi annuali, niente pacchetti rigidi. Si parte da <strong>una call gratuita</strong>, poi si lavora con sessioni di consulenza pratica <strong>a ora</strong>. Un <strong>Project Manager dedicato</strong> ti segue tra una sessione e l'altra perché le cose vengano implementate davvero.</p>
+        <ul class="how-points">
+          <li>
+            <div class="how-points-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="how-points-content">
+              <strong>1 · Call gratuita di 30 minuti</strong>
+              <span>Capiamo dove perdi tempo, quali processi convertirebbero meglio l'AI, qual è il punto giusto da cui iniziare. Senza impegno.</span>
+            </div>
+          </li>
+          <li>
+            <div class="how-points-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            </div>
+            <div class="how-points-content">
+              <strong>2 · Sessione di consulenza 1:1 su Zoom</strong>
+              <span>Da 1 ora. Mostriamo prompt, workflow e tool specifici per i tuoi processi. La sessione è registrata e ti resta. Niente teoria: si lavora sui tuoi casi reali.</span>
+            </div>
+          </li>
+          <li>
+            <div class="how-points-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="how-points-content">
+              <strong>3 · Project Manager dedicato per l'applicazione</strong>
+              <span>Un PM ti segue nei giorni successivi alla call: aiuta il team a mettere in pratica quello che è stato deciso, costruisce i prompt finali, integra i tool, raccoglie feedback. È qui che il valore si vede.</span>
+            </div>
+          </li>
+          <li>
+            <div class="how-points-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <div class="how-points-content">
+              <strong>Indipendenza totale dai vendor</strong>
+              <span>Non vendiamo licenze, non prendiamo commissioni dai tool. Scegliamo quello che funziona meglio per il tuo caso — anche se è gratuito.</span>
+            </div>
+          </li>
+          <li>
+            <div class="how-points-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+            </div>
+            <div class="how-points-content">
+              <strong>Vai avanti solo se ha senso</strong>
+              <span>Nessun obbligo, nessun rinnovo. Compri solo le ore che servono. Se serve un secondo round dopo qualche settimana, lo facciamo. Altrimenti il tuo team va avanti da solo.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="fee-card">
+        <span class="fee-tag">Paghi solo le ore di consulenza</span>
+        <h3>Un'ora per volta. Punto.</h3>
+        <p>Niente abbonamenti, niente piani annuali, niente fee minime. Compri il numero di ore che ti servono — anche solo una per iniziare.</p>
+        <ul class="fee-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Sessione 1:1 con un consulente AI dedicato
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Prompt, workflow e configurazioni che restano al tuo team
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Project Manager per il follow-up implementativo
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Registrazione della sessione + documento di sintesi
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Conforme a GDPR e AI Act europeo
+          </li>
+        </ul>
+        <div class="fee-vs">
+          <div class="fee-vs-row strike">Pacchetti annuali da migliaia di euro</div>
+          <div class="fee-vs-row strike">Licenze software vincolanti</div>
+          <div class="fee-vs-row strike">Consulenze teoriche senza implementazione</div>
+          <div class="fee-vs-row strike">Vendor lock-in nascosti</div>
+          <div class="fee-vs-row"><strong>↳ Solo l'ora di consulenza, concordata in anticipo</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== METODO ===== -->
+<section class="about" id="metodo">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="method-schema">
+          <div class="method-schema-title">Il flusso · 4 fasi</div>
+          <div class="method-schema-h">Dalla call gratuita all'AI <em>integrata nei tuoi processi</em>.</div>
+          <div class="method-flow">
+
+            <div class="method-step">
+              <div class="method-step-num">1</div>
+              <div class="method-step-body">
+                <div class="method-step-title">Diagnosi</div>
+                <div class="method-step-desc">Call gratuita di 30'. Mappiamo dove il tuo team perde più tempo e quali processi sono prioritari.</div>
+                <span class="method-step-tag">30 min · gratis</span>
+              </div>
+            </div>
+
+            <div class="method-step">
+              <div class="method-step-num">2</div>
+              <div class="method-step-body">
+                <div class="method-step-title">Workflow su misura</div>
+                <div class="method-step-desc">Sessione 1:1 su Zoom. Costruiamo insieme prompt, automazioni e configurazioni sui tuoi casi reali.</div>
+                <span class="method-step-tag">1+ ore · a consumo</span>
+              </div>
+            </div>
+
+            <div class="method-step">
+              <div class="method-step-num">3</div>
+              <div class="method-step-body">
+                <div class="method-step-title">Implementazione</div>
+                <div class="method-step-desc">Il Project Manager segue il team nei giorni successivi: prompt finali, integrazioni, training individuali.</div>
+                <span class="method-step-tag">PM dedicato</span>
+              </div>
+            </div>
+
+            <div class="method-step">
+              <div class="method-step-num">4</div>
+              <div class="method-step-body">
+                <div class="method-step-title">Misura &amp; iterazione</div>
+                <div class="method-step-desc">Verifichiamo ore liberate ed effetti reali. Si itera dove serve, si chiude dove il team è autonomo.</div>
+                <span class="method-step-tag">Ownership al team</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="method-output">
+            <div class="method-output-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="method-output-text">
+              <strong>Output</strong>
+              Workflow operativi, prompt riutilizzabili, team autonomo. Zero vendor lock-in.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="hero-eyebrow">Il metodo</div>
+        <h2>Pratico, indipendente, italiano.</h2>
+        <p class="about-lead">«La consulenza AI in Italia oggi è quasi sempre <strong>teoria piacevole o vendita di licenze</strong>. Noi facciamo l'opposto: <strong>workflow concreti</strong> sul lavoro che già fai.»</p>
+        <p>Siamo un team che lavora <strong>esclusivamente sull'applicazione pratica dell'AI</strong> nei processi aziendali quotidiani. Niente keynote, niente roadmap a cinque anni: <strong>prompt, automazioni e workflow</strong> che il tuo team usa già la settimana dopo la nostra call.</p>
+        <p>Il nostro punto di partenza è <strong>capire come lavora il tuo team oggi</strong> — non come dovrebbe lavorare in teoria. Da lì costruiamo il <strong>set minimo di strumenti</strong> che fa risparmiare ore vere, senza stravolgere abitudini e flussi consolidati.</p>
+        <p>Lavoriamo con i principali strumenti del mercato — <strong>ChatGPT, Claude, Gemini, Copilot</strong> per la generazione, <strong>n8n, Make, Zapier</strong> per le automazioni, plus tool verticali per casi specifici — ma <strong>non vendiamo nessuno di questi</strong>. La selezione è sempre guidata dal tuo caso d'uso, non dalle commissioni di un fornitore.</p>
+        <p>Tutto il nostro lavoro è impostato in conformità a <strong>GDPR e AI Act europeo</strong>: data residency, trattamento di dati aziendali sensibili, gestione del consenso, audit log. <strong>L'AI può essere veloce anche restando in regola</strong>.</p>
+
+        <!-- ===== CERTIFICAZIONI TEAM ===== -->
+        <div class="team-certs">
+          <div class="team-certs-head">
+            <div class="team-certs-eyebrow">Team certificato</div>
+            <h3>Certificazioni <span class="italic-em">validabili</span> sulle principali AI.</h3>
+            <p>Il nostro team mantiene certificazioni ufficiali sui principali provider e tool del mercato — verificabili direttamente sui portali dei vendor. Non parliamo di AI: la usiamo (e veniamo testati su come la usiamo) ogni anno.</p>
+          </div>
+          <div class="certs-grid">
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855l-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08L8.704 5.46a.795.795 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>OpenAI</strong>
+                <span>ChatGPT &amp; API · Prompt Engineering</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>Anthropic</strong>
+                <span>Claude Enterprise · Claude API</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24A12 12 0 1 1 24 12a12 12 0 0 1-12 12Zm9.81-9.21A10.05 10.05 0 0 0 14.79 2.19a10 10 0 0 0-9.6 9.6 10.05 10.05 0 0 0 12.62 12.62A10 10 0 0 0 24 14.79a10.06 10.06 0 0 0-2.19-7.66Zm-3.36 6.06A6.45 6.45 0 0 1 12 18.45a6.45 6.45 0 0 1-6.45-6.45A6.45 6.45 0 0 1 12 5.55a6.45 6.45 0 0 1 4.79 2.13l-1.99 1.99a3.65 3.65 0 0 0-2.8-1.32 3.65 3.65 0 0 0-3.65 3.65 3.65 3.65 0 0 0 3.65 3.65 3.65 3.65 0 0 0 3.45-2.45h-3.45V11h6.15c.05.34.08.66.08 1a6.45 6.45 0 0 1-.78 3.85Z"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>Google Cloud</strong>
+                <span>Gemini · Generative AI Leader</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.408v11.408H0V0zm12.594 0H24v11.408H12.594V0zM0 12.594h11.408V24H0V12.594zm12.594 0H24V24H12.594V12.594z"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>Microsoft</strong>
+                <span>Copilot · Azure AI Fundamentals</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>n8n &amp; Make</strong>
+                <span>Workflow Automation · Self-hosted</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div class="cert-badge-body">
+                <strong>AI Act &amp; GDPR</strong>
+                <span>Compliance &amp; Data Governance UE</span>
+              </div>
+            </div>
+          </div>
+          <p class="certs-foot">Le credenziali sono <strong>verificabili direttamente sui portali dei vendor</strong> — su richiesta forniamo gli ID di certificazione del consulente assegnato al tuo progetto.</p>
+        </div>
+
+        <div class="about-credentials">
+          <div class="cred">
+            <div class="cred-label">Aziende affiancate</div>
+            <div class="cred-val">120 +</div>
+          </div>
+          <div class="cred">
+            <div class="cred-label">Ore di consulenza erogate</div>
+            <div class="cred-val">1.800 +</div>
+          </div>
+          <div class="cred">
+            <div class="cred-label">Settori serviti</div>
+            <div class="cred-val">18 +</div>
+          </div>
+          <div class="cred">
+            <div class="cred-label">Tool padroneggiati</div>
+            <div class="cred-val">I principali del mercato</div>
+          </div>
+          <div class="cred">
+            <div class="cred-label">Compliance</div>
+            <div class="cred-val">GDPR &amp; AI Act</div>
+          </div>
+          <div class="cred">
+            <div class="cred-label">Modalità</div>
+            <div class="cred-val">Online · Italia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FA PER TE ===== -->
+<section class="fit-grid">
+  <style>
+    .fit-grid{padding:90px 0;background:var(--off-white)}
+    .fit-intro{max-width:680px;margin:0 auto 50px;text-align:center}
+    .fit-twocols{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto}
+    .fit-col{background:var(--white);border-radius:18px;padding:36px 32px;border:1.5px solid var(--gray-100)}
+    .fit-col.yes{border-color:var(--brand);border-width:2px;position:relative}
+    .fit-col.yes::after{content:"Il nostro cliente tipo";position:absolute;top:-12px;left:32px;background:var(--brand);color:var(--white);padding:4px 12px;border-radius:99px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+    .fit-col h3{font-size:20px;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:24px;display:flex;align-items:center;gap:10px}
+    .fit-col h3 svg{width:22px;height:22px;flex-shrink:0}
+    .fit-col.yes h3 svg{color:var(--brand)}
+    .fit-col.no h3 svg{color:var(--gray-400)}
+    .fit-list{list-style:none;padding:0;margin:0}
+    .fit-list li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;font-size:14.5px;color:var(--ink-soft);line-height:1.55;border-bottom:1px solid var(--gray-100)}
+    .fit-list li:last-child{border-bottom:0}
+    .fit-list li svg{width:18px;height:18px;flex-shrink:0;margin-top:2px}
+    .fit-list li > span{flex:1;min-width:0}
+    .fit-col.yes .fit-list svg{color:var(--brand)}
+    .fit-col.no .fit-list svg{color:var(--gray-400)}
+    .fit-col.no{opacity:.92}
+    @media (max-width:780px){.fit-twocols{grid-template-columns:1fr}.fit-grid{padding:60px 0}}
+  </style>
+  <div class="container">
+    <div class="fit-intro">
+      <div class="section-eyebrow">Per chi è (e per chi no)</div>
+      <h2 class="section-title">Non siamo per tutti. <span class="italic-em">Meglio dirselo subito</span>.</h2>
+      <p class="section-sub">La consulenza pratica a ore, con un PM che segue l'implementazione, funziona molto bene con certi profili e poco con altri. Se ti riconosci nella colonna a sinistra, abbiamo le condizioni giuste per lavorare insieme.</p>
+    </div>
+
+    <div class="fit-twocols">
+      <div class="fit-col yes">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Fa per te se…
+        </h3>
+        <ul class="fit-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Hai un team che brucia <strong>ore preziose su task ripetitivi</strong> e sa che potrebbe fare cose più importanti.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Vuoi iniziare a usare l'AI <strong>sul serio</strong>, senza firmare contratti annuali o legarti a un fornitore.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Cerchi consulenti che <strong>entrano nei tuoi processi reali</strong>, non che ti consegnano un PDF di slide.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Vuoi <strong>portare in casa competenze</strong> (copy, data, automation, design) che oggi paghi caro in outsourcing.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Hai bisogno di qualcuno che <strong>segua l'implementazione</strong> giorno per giorno, non che si limiti alla formazione.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Tratti <strong>dati aziendali sensibili</strong> e vuoi un'AI integrata in modo GDPR-compliant fin dall'inizio.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fit-col no">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Non fa per te se…
+        </h3>
+        <ul class="fit-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Ti serve un <strong>corso "spunta-casella"</strong> in aula da chiudere a fine anno per la formazione finanziata.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Cerchi una <strong>roadmap di trasformazione a 24 mesi</strong> da presentare al CdA — noi ragioniamo in settimane.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Pensi che l'AI possa <strong>funzionare senza coinvolgere chi fa il lavoro</strong> ogni giorno.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Vuoi una <strong>piattaforma AI custom</strong> sviluppata da zero — noi facciamo consulenza e applicazione, non software house.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Cerchi chi ti racconti che l'AI <strong>risolve tutto in automatico</strong>. La verità: serve metodo, e un po' di disciplina.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <span>Non vuoi che <strong>il tuo team metta mano all'AI</strong>: senza di loro, niente di tutto questo funziona.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-eyebrow">Domande frequenti</div>
+    <h2 class="section-title">Quello che ci chiedono più spesso.</h2>
+
+    <div class="faq-filters" role="tablist" aria-label="Categorie domande">
+      <button class="faq-filter active" data-category="all" role="tab" aria-selected="true">Tutte</button>
+      <button class="faq-filter" data-category="costi" role="tab" aria-selected="false">Costi &amp; prova</button>
+      <button class="faq-filter" data-category="tecnico" role="tab" aria-selected="false">Tecnico &amp; tool</button>
+      <button class="faq-filter" data-category="sicurezza" role="tab" aria-selected="false">Dati &amp; sicurezza</button>
+      <button class="faq-filter" data-category="modalita" role="tab" aria-selected="false">Modalità</button>
+      <button class="faq-filter" data-category="risultati" role="tab" aria-selected="false">Risultati</button>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item" data-category="costi">
+        <button class="faq-q">
+          <span>Quanto costa un'ora di consulenza?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Il ticket è volutamente <strong>medio-basso</strong> rispetto al mercato della consulenza tradizionale, perché vogliamo che provare abbia senso anche per aziende piccole. La cifra esatta dipende dall'area di intervento e dal numero di persone coinvolte nella sessione — te la diciamo subito in call, senza giri di parole. Nessun preventivo lungo da firmare.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="tecnico">
+        <button class="faq-q">
+          <span>Il mio team non è tecnico. Riusciremo a seguire?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><strong>Sì, è proprio il nostro target.</strong> Tutto quello che mostriamo è pensato per persone che usano un browser e un foglio di calcolo, non per sviluppatori. Lavoriamo a fianco di chi fa marketing, vendite, operations, amministrazione — non a fianco dell'IT.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="tecnico">
+        <button class="faq-q">
+          <span>Quali tool usate? Devo comprare licenze?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Lavoriamo con <strong>tutti i principali strumenti</strong>: ChatGPT, Claude, Gemini, Copilot Microsoft, Perplexity, Midjourney per le immagini, n8n/Make/Zapier per le automazioni, più tool verticali quando servono. Spesso si parte con piani gratuiti o quelli che già hai. Le licenze non passano da noi: <strong>non prendiamo commissioni dai vendor</strong>.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="sicurezza">
+        <button class="faq-q">
+          <span>I dati aziendali sono al sicuro?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Una delle prime cose che impostiamo. Configuriamo i tool in modalità <strong>enterprise / business</strong> dove i dati non vengono usati per il training, scegliamo opzioni con <strong>data residency europea</strong> dove possibile, e impostiamo policy interne chiare per il team. Conformi a <strong>GDPR e AI Act</strong>.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="risultati">
+        <button class="faq-q">
+          <span>Quanto tempo serve per vedere risultati?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Le prime ore recuperate si vedono <strong>già nella settimana successiva alla call</strong>, perché lavoriamo su processi specifici e non su trasformazioni astratte. L'impatto strutturale — quello che si misura in punti di marginalità — richiede tipicamente 2-3 mesi di applicazione costante.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="modalita">
+        <button class="faq-q">
+          <span>Con quali settori lavorate?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Tutti i settori in cui c'è <strong>lavoro ripetitivo di conoscenza</strong>: agenzie e studi professionali, e-commerce, manifatturiero (lato gestionale e commerciale), servizi B2B, retail, hospitality, sanità privata, no-profit. Le leve cambiano, il metodo no.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="modalita">
+        <button class="faq-q">
+          <span>Lavorate solo online o anche in presenza?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Il nostro modello è <strong>online via Zoom</strong>: ci permette di servire aziende in tutta Italia con tempi di risposta veloci e costi accessibili. Per esigenze specifiche valutiamo sessioni in presenza, ma il <strong>90% del nostro lavoro avviene da remoto</strong> — e funziona benissimo così.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="costi">
+        <button class="faq-q">
+          <span>Posso provare prima di impegnarmi?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><strong>La call di 30 minuti è gratuita</strong> proprio per questo. Capiamo insieme se ha senso lavorare insieme e <strong>tu decidi senza pressione</strong> di vendita. Se decidi di proseguire, parti dall'acquisto di una singola ora: zero pacchetti, zero impegni.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="modalita">
+        <button class="faq-q">
+          <span>Cosa fa esattamente il Project Manager?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Tra una sessione di consulenza e l'altra, il PM <strong>fa accadere le cose</strong>: aiuta il team a mettere in pratica quello che è stato visto in call, finalizza prompt e workflow, monitora che i tool siano usati davvero, raccoglie feedback. È la differenza tra una bella consulenza <em>e</em> un cambiamento reale nei processi.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="sicurezza">
+        <button class="faq-q">
+          <span>Il vostro team è certificato sulle AI che usate?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Sì. Il nostro team mantiene <strong>certificazioni ufficiali e verificabili</strong> sui principali provider: OpenAI, Anthropic, Google Cloud (Gemini · Generative AI Leader), Microsoft (Copilot · Azure AI Fundamentals), oltre a n8n/Make per le automazioni. Le credenziali sono <strong>validabili direttamente sui portali dei vendor</strong>: su richiesta forniamo gli ID di certificazione del consulente assegnato.</div></div>
+      </div>
+
+      <div class="faq-item" data-category="risultati">
+        <button class="faq-q">
+          <span>Cosa succede se serve una competenza che oggi affidiamo in outsourcing?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">È uno dei nostri punti forti. Molte attività che oggi affidi a <strong>copy, designer, analisti dati o agenzie</strong> esterne, con l'AI giusta e workflow strutturati il tuo team può <strong>internalizzarle</strong> mantenendo qualità professionale. Ti aiutiamo a capire dove ha senso farlo e dove invece conviene continuare con uno specialista.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATTI ===== -->
+<section class="contact" id="contatti">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="hero-eyebrow">Parliamone</div>
+        <h2>Prenota una call gratuita di <span class="italic-em">30 minuti</span>.</h2>
+        <p>Compila il form, scegli uno slot sul calendario e parliamone. <strong>Senza impegno, senza vendite forzate</strong>. Ti rispondiamo entro 24 ore lavorative.</p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-method-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/[NUMERO]?text=Ciao%2C%20vorrei%20saperne%20di%20pi%C3%B9%20sulla%20consulenza%20AI%20per%20aziende." target="_blank" rel="noopener">Scrivici su WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@aiperaziende.it">info@aiperaziende.it</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="#" target="_blank" rel="noopener">AI per Aziende</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Dove operiamo</strong>
+              <span>Italia · online via Zoom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" id="contactForm">
+        <form id="leadForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-firstname">Nome <span class="req">*</span></label>
+              <input type="text" id="cf-firstname" name="firstname" required placeholder="Mario">
+            </div>
+            <div class="form-group">
+              <label for="cf-lastname">Cognome <span class="req">*</span></label>
+              <input type="text" id="cf-lastname" name="lastname" required placeholder="Rossi">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-email">Email aziendale <span class="req">*</span></label>
+              <input type="email" id="cf-email" name="email" required placeholder="mario.rossi@azienda.it">
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Telefono <span class="req">*</span></label>
+              <input type="tel" id="cf-phone" name="phone" required placeholder="+39 ...">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-company">Azienda <span class="req">*</span></label>
+              <input type="text" id="cf-company" name="company" required placeholder="Es. Acme S.r.l.">
+            </div>
+            <div class="form-group">
+              <label for="cf-role">Il tuo ruolo <span class="req">*</span></label>
+              <input type="text" id="cf-role" name="role" required placeholder="Es. CEO, Direttore Marketing">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-size">Dimensione team <span class="req">*</span></label>
+              <select id="cf-size" name="size" required>
+                <option value="">Seleziona</option>
+                <option value="1-5">1 — 5 persone</option>
+                <option value="6-20">6 — 20 persone</option>
+                <option value="21-50">21 — 50 persone</option>
+                <option value="51-200">51 — 200 persone</option>
+                <option value="200+">Oltre 200</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-area">Area di interesse <span class="req">*</span></label>
+              <select id="cf-area" name="area" required>
+                <option value="">Seleziona</option>
+                <option value="marketing">Marketing &amp; Contenuti</option>
+                <option value="vendite">Vendite &amp; Cliente</option>
+                <option value="operations">Operations &amp; Processi</option>
+                <option value="amministrazione">Amministrazione &amp; Finance</option>
+                <option value="trasversale">Più aree / trasversale</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-msg">Raccontaci brevemente la tua situazione <small style="font-weight:400;color:var(--ink-mute);text-transform:none;letter-spacing:0">(opzionale)</small></label>
+            <textarea id="cf-msg" name="message" placeholder="Es. il team marketing perde molte ore nella produzione di contenuti, vorrei capire come l'AI può aiutarci a essere più veloci senza perdere qualità..."></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="cf-privacy" required>
+            <label for="cf-privacy">Ho letto l'<a href="#" onclick="openPolicy('privacy');return false">informativa privacy</a> e presto il consenso al trattamento dei miei dati personali, ai sensi del Reg. UE 2016/679 (Art. 13).</label>
+          </div>
+          <button type="submit" class="form-submit">Prenota la call gratuita</button>
+          <p class="form-foot-note">Rispondiamo entro 24 ore lavorative.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Richiesta ricevuta. Grazie!</h3>
+          <p>Abbiamo preso in carico la tua richiesta. <strong>Rispondiamo entro 24 ore lavorative</strong> per fissare insieme la call gratuita di 30 minuti.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="background:transparent;padding:0;border-radius:0;flex-shrink:0">
+            <rect width="44" height="44" rx="10" fill="#4F5AB7"/>
+            <path d="M11 30 L17 14 L23 30 M13.5 25 H20.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M28 14 V30 M28 14 H32 M28 30 H32" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <div>
+            AI per Aziende
+            <small>Consulenza AI per imprese</small>
+          </div>
+        </div>
+        <p style="font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.7;margin-top:6px;max-width:340px">Affianchiamo le aziende italiane nell'integrazione pratica dell'intelligenza artificiale nei processi quotidiani. Marketing, vendite, operations, amministrazione.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Sito</h5>
+        <ul>
+          <li><a href="#servizi">Cosa facciamo</a></li>
+          <li><a href="#stima">Stima impatto</a></li>
+          <li><a href="#come-lavoriamo">Come lavoriamo</a></li>
+          <li><a href="#metodo">Metodo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contatti</h5>
+        <ul>
+          <li><a href="mailto:info@aiperaziende.it">info@aiperaziende.it</a></li>
+          <li><a href="https://wa.me/[NUMERO]" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li style="color:rgba(255,255,255,.5)">Italia · online via Zoom</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="footerYear">2026</span> [Ragione sociale società]. Tutti i diritti riservati. P.IVA [da inserire].</p>
+      <p style="display:flex;gap:18px">
+        <a href="#" onclick="openPolicy('privacy');return false">Privacy</a>
+        <a href="#" onclick="openPolicy('cookie');return false">Cookie</a>
+      </p>
+    </div>
+
+    <div class="compliance-note">
+      <strong>Avvertenze.</strong> Il presente sito ha finalità informative e commerciali e descrive un servizio di <strong>consulenza in materia di applicazione dell'intelligenza artificiale</strong> ai processi aziendali. Le stime di impatto presenti nel configuratore sono <strong>illustrative</strong>: l'effettivo recupero di tempo dipende dalle caratteristiche dei processi del cliente, dal coinvolgimento del team e dalla corretta implementazione delle indicazioni fornite. Le sessioni di consulenza sono erogate nel rispetto della normativa applicabile, inclusi il Reg. UE 2016/679 (GDPR) e il Reg. UE 2024/1689 (AI Act). Maggiori dettagli nella <a href="#" onclick="openPolicy('privacy');return false">Privacy Policy</a> e nella <a href="#" onclick="openPolicy('cookie');return false">Cookie Policy</a>.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="fab-stack">
+  <a href="https://wa.me/[NUMERO]?text=Ciao%2C%20vorrei%20saperne%20di%20pi%C3%B9%20sulla%20consulenza%20AI%20per%20aziende." target="_blank" rel="noopener" class="fab fab-whatsapp" aria-label="Contattaci su WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+  </a>
+  <a href="#contatti" class="fab fab-contact" aria-label="Vai al form di contatto">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </a>
+</div>
+
+<!-- ===== COOKIE BANNER ===== -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-banner-head">
+    <div class="cookie-ico">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="9.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="10" r="1.2" fill="currentColor"/><circle cx="10" cy="15" r="1.2" fill="currentColor"/><circle cx="14.5" cy="14.5" r="1" fill="currentColor"/></svg>
+    </div>
+    <div>
+      <h4>Privacy &amp; cookie</h4>
+      <small>Il tuo consenso</small>
+    </div>
+  </div>
+  <p>Usiamo cookie tecnici per il funzionamento del sito. Con il tuo consenso useremo anche cookie di analisi e di marketing per migliorare l'esperienza e per inviarti comunicazioni rilevanti.</p>
+  <div class="cookie-banner-links">
+    <a href="#" onclick="openPolicy('privacy');return false">Privacy Policy</a>
+    <a href="#" onclick="openPolicy('cookie');return false">Cookie Policy</a>
+  </div>
+  <div class="cookie-banner-btns">
+    <button class="cookie-reject" onclick="setCookieChoice('reject')">Solo necessari</button>
+    <button class="cookie-accept" onclick="setCookieChoice('accept')">Accetta tutti</button>
+  </div>
+</div>
+
+<!-- ===== EXIT INTENT MODAL ===== -->
+<div class="modal-overlay" id="exitModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeExitModal()" aria-label="Chiudi">×</button>
+    <h3>Prima che tu vada via...</h3>
+    <p>Vuoi una <strong>checklist gratuita</strong> con i 10 processi aziendali dove l'AI fa la maggiore differenza in termini di tempo recuperato?</p>
+    <form id="exitForm">
+      <div class="form-group">
+        <input type="email" id="exit-email" placeholder="La tua email aziendale" required>
+      </div>
+      <button type="submit" class="form-submit">Voglio la checklist</button>
+    </form>
+    <p style="font-size:12px;color:var(--ink-mute);margin-top:14px;text-align:center">Niente spam. Solo la checklist e qualche aggiornamento utile, quando vale la pena.</p>
+  </div>
+</div>
+
+<!-- ===== POLICY MODAL ===== -->
+<div class="modal-overlay" id="policyModal">
+  <div class="policy-modal">
+    <button class="modal-close" onclick="closeModal('policyModal')">×</button>
+    <div id="policyContent"></div>
+  </div>
+</div>
+
+<script>
+/* ========== STIMA IMPATTO (checkbox multipla) ========== */
+(function(){
+  const slider = document.getElementById('stimPeopleSlider');
+  if(!slider) return;
+
+  const peopleVal = document.getElementById('stimPeople');
+  const hoursMonth = document.getElementById('stimHoursMonth');
+  const hoursYear = document.getElementById('stimHoursYear');
+  const recoEl = document.getElementById('stimReco');
+  const tasks = document.querySelectorAll('.stim-task');
+
+  // Etichette delle aree per la raccomandazione
+  const AREA_LABELS = {
+    marketing: 'Marketing & Contenuti',
+    vendite: 'Vendite & Cliente',
+    operations: 'Operations & Processi',
+    amministrazione: 'Amministrazione & Finance'
+  };
+
+  function updateSliderTrack(){
+    const pct = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+    slider.style.setProperty('--p', pct + '%');
+  }
+
+  function recalc(){
+    const people = parseInt(slider.value);
+    peopleVal.textContent = people;
+    updateSliderTrack();
+
+    // Somma dei pct dei task selezionati
+    const selected = [];
+    let totalPct = 0;
+    const areaScores = {};
+    tasks.forEach(t => {
+      const input = t.querySelector('input');
+      if(input.checked){
+        t.classList.add('selected');
+        const pct = parseFloat(t.dataset.pct);
+        totalPct += pct;
+        selected.push(t);
+        // Aggiorno punteggio area
+        const areaSpan = t.querySelector('.stim-task-area');
+        const area = areaSpan ? areaSpan.dataset.area : null;
+        if(area){ areaScores[area] = (areaScores[area] || 0) + pct; }
+      } else {
+        t.classList.remove('selected');
+      }
+    });
+
+    if(selected.length === 0){
+      hoursMonth.textContent = '—';
+      hoursYear.textContent = '—';
+      recoEl.innerHTML = '<span class="stim-result-empty">Seleziona almeno un task per vedere la tua stima.</span>';
+      return;
+    }
+
+    // Cap conservativo: max 65% di recupero totale anche se si seleziona tutto
+    const effPct = Math.min(totalPct, 0.65);
+    // Assumiamo 40 ore lavorative/settimana per persona, 4.33 settimane/mese
+    const totalWeeklyHours = people * 40;
+    const recoveredMonth = Math.round(totalWeeklyHours * effPct * 4.33);
+    const recoveredYear = recoveredMonth * 12;
+
+    hoursMonth.textContent = recoveredMonth.toLocaleString('it-IT');
+    hoursYear.textContent = recoveredYear.toLocaleString('it-IT');
+    // Micro-animazione: feedback visivo all'aggiornamento dei numeri
+    [hoursMonth, hoursYear].forEach(el => {
+      el.classList.remove('bump');
+      void el.offsetWidth; // restart animation
+      el.classList.add('bump');
+      setTimeout(() => el.classList.remove('bump'), 280);
+    });
+
+    // Determino l'area top
+    let topArea = null, topScore = 0;
+    Object.keys(areaScores).forEach(a => {
+      if(areaScores[a] > topScore){ topScore = areaScores[a]; topArea = a; }
+    });
+
+    let recoText;
+    const nSel = selected.length;
+    if(nSel >= 5){
+      recoText = '<strong>Impatto trasversale su tutto il team.</strong> Sono ore che il tuo team può ridestinare a <strong>lavoro strategico</strong>. Si parte da <strong>' + AREA_LABELS[topArea] + '</strong> — l\'area dove i risultati arrivano più rapidamente e creano slancio sul resto.';
+    } else if(nSel >= 3){
+      recoText = '<strong>Buon mix di processi da liberare.</strong> Con queste ore in più il team smette di rincorrere l\'operatività. L\'area dove l\'AI farà più differenza è <strong>' + AREA_LABELS[topArea] + '</strong>: si parte da lì, poi si estende.';
+    } else {
+      recoText = '<strong>Focus chiaro, partenza veloce.</strong> Per il tuo profilo conviene iniziare da <strong>' + AREA_LABELS[topArea] + '</strong> — è l\'area con il miglior rapporto tempo investito / ore liberate.';
+    }
+    recoEl.innerHTML = recoText;
+  }
+
+  slider.addEventListener('input', recalc);
+  tasks.forEach(t => {
+    const input = t.querySelector('input');
+    input.addEventListener('change', recalc);
+  });
+
+  // Initial render
+  recalc();
+})();
+
+/* ========== ANIMAZIONE CONTATORI NUMERI ========== */
+(function(){
+  const numVals = document.querySelectorAll('.num-val[data-target]');
+  if(!numVals.length || !('IntersectionObserver' in window)){
+    // Fallback: mostra i valori subito
+    numVals.forEach(el => {
+      const t = parseInt(el.dataset.target);
+      el.firstChild.nodeValue = t.toLocaleString('it-IT');
+      el.classList.add('in');
+    });
+    return;
+  }
+
+  function animateCount(el){
+    const target = parseInt(el.dataset.target);
+    const suffixSpan = el.querySelector('span');
+    const duration = 1400;
+    const start = performance.now();
+    // Start from 0 immediately
+    while(el.firstChild && el.firstChild !== suffixSpan){
+      el.removeChild(el.firstChild);
+    }
+    el.insertBefore(document.createTextNode('0'), suffixSpan);
+    function step(now){
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // easing out (più morbido nella parte finale)
+      const eased = 1 - Math.pow(1 - progress, 4);
+      const val = Math.round(target * eased);
+      // ricostruisco contenuto preservando lo span
+      while(el.firstChild && el.firstChild !== suffixSpan){
+        el.removeChild(el.firstChild);
+      }
+      el.insertBefore(document.createTextNode(val.toLocaleString('it-IT')), suffixSpan);
+      if(progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        el.classList.add('in');
+        animateCount(el);
+        io.unobserve(el);
+      }
+    });
+  }, {threshold: 0.2, rootMargin: '0px 0px -10% 0px'});
+
+  numVals.forEach(el => io.observe(el));
+})();
+
+/* ========== FAQ ========== */
+document.querySelectorAll('.faq-filter').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const category = btn.dataset.category;
+    document.querySelectorAll('.faq-filter').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const matches = category === 'all' || item.dataset.category === category;
+      item.style.display = matches ? '' : 'none';
+      // Chiudo gli item nascosti
+      if (!matches) item.classList.remove('open');
+    });
+  });
+});
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    q.parentElement.classList.toggle('open');
+  });
+});
+
+/* ========== CONTACT FORM ========== */
+const CALENDAR_URL = 'https://calendar.app.google/zVHe8P3v7DfzQrqBA';
+
+document.getElementById('leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('leadForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+});
+
+document.getElementById('exitForm').addEventListener('submit', e => {
+  e.preventDefault();
+  // Mostra conferma in-place al posto del form
+  const modal = document.querySelector('#exitModal .modal');
+  modal.innerHTML = '<button class="modal-close" onclick="closeModal(\'exitModal\')">×</button>' +
+    '<div class="modal-eyebrow">Richiesta ricevuta</div>' +
+    '<h2>Grazie, <span class="italic-em">ti richiamo a breve</span>.</h2>' +
+    '<p>Ho ricevuto il tuo numero. <strong>Rispondo entro 24 ore lavorative</strong> per fissare insieme la call gratuita di 30 minuti.</p>';
+  setTimeout(() => closeModal('exitModal'), 4500);
+});
+
+/* ========== COOKIE BANNER ========== */
+function showCookieBanner(){
+  if (!localStorage.getItem('mr_cookies')) {
+    setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
+  }
+}
+function setCookieChoice(choice){
+  localStorage.setItem('mr_cookies', choice);
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+showCookieBanner();
+
+/* ========== EXIT INTENT ========== */
+let exitShown = false;
+document.addEventListener('mouseleave', e => {
+  if (e.clientY <= 0 && !exitShown && !sessionStorage.getItem('mr_exit_shown')) {
+    exitShown = true;
+    sessionStorage.setItem('mr_exit_shown', '1');
+    setTimeout(() => document.getElementById('exitModal').classList.add('show'), 200);
+  }
+});
+setTimeout(() => {
+  if (!exitShown && !sessionStorage.getItem('mr_exit_shown') && window.innerWidth < 900) {
+    exitShown = true;
+    sessionStorage.setItem('mr_exit_shown', '1');
+    document.getElementById('exitModal').classList.add('show');
+  }
+}, 60000);
+
+/* ========== MODAL ========== */
+function closeModal(id){
+  document.getElementById(id).classList.remove('show');
+}
+document.querySelectorAll('.modal-overlay').forEach(m => {
+  m.addEventListener('click', e => { if (e.target === m) m.classList.remove('show'); });
+});
+
+/* ========== POLICY MODAL ========== */
+const policies = {
+  privacy: `
+    <h2>Informativa sul trattamento dei dati personali</h2>
+    <span class="updated">Ultimo aggiornamento: 15 maggio 2026</span>
+    <p>Ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (di seguito "<strong>GDPR</strong>") e del D.Lgs. 196/2003 e s.m.i. (Codice Privacy), il Titolare del trattamento fornisce all'Interessato la presente informativa relativa al trattamento dei dati personali raccolti tramite il sito e nell'eventuale prestazione del servizio di consulenza in materia di intelligenza artificiale.</p>
+
+    <h3>1. Titolare del trattamento</h3>
+    <p><strong>[Ragione sociale società]</strong> — consulenza AI iscritto all'Albo unico dei Consulenti Finanziari (sezione Consulenti Finanziari Autonomi) tenuto dall'Organismo di vigilanza e tenuta dell'Albo unico dei Consulenti Finanziari (OCF), n. di iscrizione [da inserire].<br>
+    Sede operativa: Roma — Italia.<br>
+    Email: <a href="mailto:info@aiperaziende.it">info@aiperaziende.it</a>.<br>
+    Il Titolare non ha nominato un Responsabile della protezione dei dati (DPO), non rientrando nelle ipotesi di nomina obbligatoria ex art. 37 GDPR. È comunque possibile contattare il Titolare per qualsiasi questione relativa al trattamento dei dati personali ai recapiti sopra indicati.</p>
+
+    <h3>2. Categorie di dati trattati</h3>
+    <p>Nel rispetto del principio di minimizzazione (art. 5.1.c GDPR), il Titolare tratta le seguenti categorie di dati personali:</p>
+    <ul>
+      <li><strong>Dati anagrafici e di contatto</strong>: nome, cognome, indirizzo email, numero di telefono, eventuali ulteriori informazioni fornite volontariamente nei campi liberi del form;</li>
+      <li><strong>Dati relativi all'organizzazione</strong> (ove forniti dall'Interessato): nome dell'azienda, ruolo, dimensione del team, area di interesse, descrizione della situazione operativa;</li>
+      <li><strong>Dati di navigazione</strong>: indirizzo IP, tipologia di browser, sistema operativo, pagine visitate, riferimento temporale, eventuali altri dati raccolti tramite cookie ai sensi della <a href="#" onclick="openPolicy('cookie');return false">Cookie Policy</a>;</li>
+      <li><strong>Dati identificativi e finanziari ulteriori</strong> in caso di avvio del rapporto professionale (es. dati patrimoniali, fiscali, reddituali, KYC/AML), trattati separatamente nell'ambito dell'incarico professionale e oggetto di specifica informativa.</li>
+    </ul>
+
+    <h3>3. Finalità e basi giuridiche del trattamento</h3>
+    <p>I dati personali sono trattati per le seguenti finalità, ciascuna fondata sulla propria base giuridica ai sensi dell'art. 6 GDPR:</p>
+    <ul>
+      <li><strong>a) Riscontro alle richieste di contatto</strong> e gestione della call conoscitiva gratuita — base giuridica: misure precontrattuali su richiesta dell'Interessato ex art. 6.1.b GDPR ed esecuzione di obblighi normativi ex art. 6.1.c GDPR;</li>
+      <li><strong>b) Erogazione del servizio di consulenza in materia di intelligenza artificiale autonoma</strong>, ove instaurato il rapporto contrattuale — base giuridica: esecuzione del contratto di cui l'Interessato è parte (art. 6.1.b GDPR);</li>
+      <li><strong>c) Adempimento di obblighi di legge e regolamentari</strong> applicabili all'attività di consulente finanziario autonomo, ivi inclusi a titolo esemplificativo: normativa sull'Albo OCF (D.Lgs. 58/1998 e Regolamento Intermediari CONSOB), normativa antiriciclaggio (D.Lgs. 231/2007 e s.m.i.), normativa fiscale, MiFID II — base giuridica: obbligo legale (art. 6.1.c GDPR);</li>
+      <li><strong>d) Difesa di diritti</strong> in sede giudiziaria o stragiudiziale — base giuridica: legittimo interesse del Titolare (art. 6.1.f GDPR);</li>
+      <li><strong>e) Comunicazioni informative/promozionali</strong> relative al servizio offerto — base giuridica: consenso libero, specifico e revocabile dell'Interessato (art. 6.1.a GDPR). Il mancato consenso non pregiudica l'erogazione del servizio.</li>
+    </ul>
+
+    <h3>4. Natura del conferimento</h3>
+    <p>Il conferimento dei dati per le finalità (a), (b) e (c) è <strong>necessario</strong>: il rifiuto comporta l'impossibilità di evadere la richiesta, instaurare o proseguire il rapporto professionale, ovvero adempiere agli obblighi di legge. Per la finalità (e) il conferimento è <strong>facoltativo</strong>.</p>
+
+    <h3>5. Modalità del trattamento</h3>
+    <p>I dati sono trattati con strumenti elettronici e, ove necessario, cartacei, mediante procedure logiche e organizzative adeguate a garantirne la sicurezza, la riservatezza e l'integrità (art. 32 GDPR). Sono adottate misure tecniche e organizzative idonee a prevenire accessi non autorizzati, perdita, distruzione o diffusione dei dati. La trasmissione dei dati tramite il sito avviene esclusivamente su protocollo cifrato HTTPS/TLS.</p>
+
+    <h3>6. Categorie di destinatari</h3>
+    <p>I dati personali potranno essere comunicati, esclusivamente per le finalità sopra indicate, ai seguenti soggetti, debitamente designati come Responsabili del trattamento ex art. 28 GDPR ove ricorrano i presupposti:</p>
+    <ul>
+      <li>Consulenti professionali del Titolare (commercialista, consulente del lavoro, avvocato) per adempimenti contabili, fiscali e legali;</li>
+      <li>Fornitori di servizi tecnici e informatici (hosting, posta elettronica, sistemi di pianificazione appuntamenti, strumenti di analytics) — vedere relativo elenco aggiornato disponibile su richiesta;</li>
+      <li>Autorità pubbliche e organi di vigilanza (OCF, CONSOB, Autorità Giudiziaria, Guardia di Finanza, UIF), nei casi e nelle modalità previsti dalla normativa;</li>
+      <li>Soggetti terzi nell'ambito di obblighi antiriciclaggio (D.Lgs. 231/2007).</li>
+    </ul>
+    <p>I dati <strong>non sono oggetto di diffusione né di cessione</strong> a terzi per finalità di marketing autonomo.</p>
+
+    <h3>7. Trasferimento dei dati extra-UE</h3>
+    <p>Alcuni fornitori di servizi tecnici (a titolo esemplificativo: Google LLC per i servizi di posta, calendario e analytics) possono operare con server situati al di fuori dello Spazio Economico Europeo. In tali casi, il trasferimento avviene esclusivamente in presenza di adeguate garanzie ai sensi del Capo V GDPR (decisione di adeguatezza, Clausole Contrattuali Tipo della Commissione Europea, ulteriori misure supplementari).</p>
+
+    <h3>8. Periodo di conservazione</h3>
+    <p>I dati sono conservati per il tempo strettamente necessario al perseguimento delle finalità per cui sono stati raccolti, secondo i seguenti criteri:</p>
+    <ul>
+      <li><strong>Richieste di contatto senza avvio del rapporto</strong>: massimo 24 mesi dalla raccolta;</li>
+      <li><strong>Rapporto professionale</strong>: per tutta la durata del rapporto e, successivamente, per <strong>10 anni</strong> dalla cessazione dello stesso, ai sensi della normativa civilistica, fiscale e di settore (incluso art. 31 D.Lgs. 231/2007 in materia di antiriciclaggio);</li>
+      <li><strong>Difesa di diritti</strong>: per il tempo necessario all'esercizio o alla difesa in sede giudiziaria;</li>
+      <li><strong>Marketing</strong>: fino alla revoca del consenso e, comunque, non oltre 24 mesi dall'ultimo contatto.</li>
+    </ul>
+    <p>Al termine dei periodi indicati i dati sono cancellati o resi anonimi in modo irreversibile.</p>
+
+    <h3>9. Diritti dell'Interessato</h3>
+    <p>In qualsiasi momento l'Interessato può esercitare nei confronti del Titolare i diritti previsti dagli artt. 15-22 GDPR, e in particolare:</p>
+    <ul>
+      <li>diritto di <strong>accesso</strong> ai dati personali (art. 15);</li>
+      <li>diritto di <strong>rettifica</strong> dei dati inesatti o incompleti (art. 16);</li>
+      <li>diritto alla <strong>cancellazione</strong> ("diritto all'oblio") nei casi previsti (art. 17);</li>
+      <li>diritto alla <strong>limitazione</strong> del trattamento (art. 18);</li>
+      <li>diritto alla <strong>portabilità</strong> dei dati (art. 20);</li>
+      <li>diritto di <strong>opposizione</strong> al trattamento (art. 21);</li>
+      <li>diritto di non essere sottoposto a <strong>decisioni automatizzate</strong>, compresa la profilazione (art. 22);</li>
+      <li>diritto di <strong>revocare il consenso</strong> in qualsiasi momento, senza pregiudizio della liceità dei trattamenti basati sul consenso effettuati prima della revoca.</li>
+    </ul>
+    <p>Le richieste possono essere inviate al Titolare all'indirizzo email <a href="mailto:info@aiperaziende.it">info@aiperaziende.it</a>. Il Titolare risponderà entro i termini di legge (di norma 30 giorni, prorogabili).</p>
+
+    <h3>10. Diritto di reclamo</h3>
+    <p>L'Interessato ha diritto di proporre reclamo all'Autorità di controllo competente — in Italia, il <strong>Garante per la Protezione dei Dati Personali</strong> (Piazza Venezia 11, 00187 Roma — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>) — qualora ritenga che il trattamento avvenga in violazione del GDPR o della normativa applicabile.</p>
+
+    <h3>11. Processi decisionali automatizzati</h3>
+    <p>Il Titolare <strong>non effettua processi decisionali interamente automatizzati</strong>, compresa la profilazione, ai sensi dell'art. 22 GDPR. Il configuratore di stima impatto presente nel sito è uno strumento puramente illustrativo: non comporta alcuna decisione automatizzata produttiva di effetti giuridici sull'Interessato e non sostituisce in alcun modo l'attività di consulenza personalizzata.</p>
+
+    <h3>12. Modifiche all'informativa</h3>
+    <p>Il Titolare si riserva il diritto di aggiornare la presente informativa per adeguarla a modifiche normative o organizzative. Le modifiche saranno pubblicate sul sito con indicazione della data di ultimo aggiornamento.</p>
+  `,
+  cookie: `
+    <h2>Cookie Policy</h2>
+    <span class="updated">Ultimo aggiornamento: 15 maggio 2026</span>
+    <p>La presente Cookie Policy è resa ai sensi del Provvedimento del Garante per la Protezione dei Dati Personali del 10 giugno 2021 ("Linee guida cookie e altri strumenti di tracciamento") e degli artt. 6, 7 e 13 GDPR. Essa descrive le tipologie di cookie e altri strumenti di tracciamento utilizzati sul presente sito, le relative finalità e le modalità con cui l'utente può esprimere o revocare il proprio consenso.</p>
+
+    <h3>1. Cosa sono i cookie</h3>
+    <p>I cookie sono piccole stringhe di testo che i siti visitati inviano al terminale dell'utente, dove vengono memorizzate per essere poi ritrasmesse agli stessi siti in occasione di successive visite. Strumenti analoghi (web beacon, pixel, identificatori univoci, local storage, ecc.) consentono di raccogliere informazioni sul comportamento dell'utente.</p>
+
+    <h3>2. Tipologie di cookie utilizzati</h3>
+
+    <h4>2.1 Cookie tecnici (necessari) — base giuridica: art. 122 D.Lgs. 196/2003; non richiedono consenso</h4>
+    <p>Sono indispensabili per il corretto funzionamento del sito e per fornire all'utente i servizi esplicitamente richiesti. Includono:</p>
+    <ul>
+      <li>cookie di sessione e di navigazione, necessari a garantire la fruizione del sito;</li>
+      <li>cookie di funzionalità che memorizzano le scelte effettuate dall'utente (es. preferenze sui cookie stessi);</li>
+      <li>cookie analitici di prima parte assimilabili ai tecnici, con IP anonimizzato e senza incrocio con altri dati.</li>
+    </ul>
+    <p>Per questi cookie non è richiesto il consenso preventivo, ma è dovuta la presente informativa.</p>
+
+    <h4>2.2 Cookie analitici di terze parti — base giuridica: consenso (art. 6.1.a GDPR)</h4>
+    <p>Possono essere utilizzati, previo consenso dell'utente, per raccogliere in forma anonima e aggregata informazioni statistiche sull'utilizzo del sito (numero di visitatori, pagine più viste, durata della sessione, sorgenti di traffico). Tali cookie consentono di migliorare le prestazioni e i contenuti del sito.</p>
+    <p>In caso di utilizzo di strumenti come Google Analytics, sono adottate ove possibile configurazioni che minimizzano l'impatto sulla privacy (anonimizzazione IP, disattivazione della condivisione dati).</p>
+
+    <h4>2.3 Cookie di marketing/profilazione di terze parti — base giuridica: consenso (art. 6.1.a GDPR)</h4>
+    <p>Possono essere installati, esclusivamente previo consenso esplicito dell'utente, per inviare messaggi pubblicitari in linea con le preferenze manifestate dall'utente nell'ambito della navigazione in rete, ovvero per misurare l'efficacia di campagne pubblicitarie. <strong>Allo stato attuale il sito non installa cookie di profilazione di propria iniziativa.</strong></p>
+
+    <h3>3. Cookie di terze parti</h3>
+    <p>Alcuni cookie possono essere installati da soggetti terzi rispetto al Titolare (es. fornitori di servizi tecnici, analytics, social network). Per ciascuno di tali soggetti l'utente può consultare la relativa informativa privacy e cookie sul sito del fornitore. I principali fornitori potenzialmente utilizzati includono Google LLC (Analytics, Fonts, Calendar) — il Titolare si impegna a mantenere aggiornato l'elenco completo, disponibile su richiesta.</p>
+
+    <h3>4. Come prestare, modificare o revocare il consenso</h3>
+    <p>Al primo accesso al sito è mostrato un banner che consente all'utente di:</p>
+    <ul>
+      <li>accettare tutti i cookie;</li>
+      <li>rifiutare tutti i cookie non strettamente necessari;</li>
+      <li>personalizzare le proprie preferenze.</li>
+    </ul>
+    <p>È possibile modificare o revocare le preferenze in qualsiasi momento cliccando sul link "Cookie Policy" presente nel footer del sito o, in alternativa, cancellando i cookie attraverso le impostazioni del proprio browser. Si segnala che la disattivazione dei cookie tecnici potrebbe compromettere il corretto funzionamento del sito.</p>
+
+    <h3>5. Gestione cookie tramite browser</h3>
+    <p>Le istruzioni per la gestione dei cookie nei principali browser sono disponibili ai seguenti link ufficiali:</p>
+    <ul>
+      <li>Google Chrome: <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">support.google.com/chrome</a></li>
+      <li>Mozilla Firefox: <a href="https://support.mozilla.org/it/kb/Eliminare%20i%20cookie" target="_blank" rel="noopener">support.mozilla.org</a></li>
+      <li>Safari: <a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank" rel="noopener">support.apple.com</a></li>
+      <li>Microsoft Edge: <a href="https://support.microsoft.com/it-it/microsoft-edge" target="_blank" rel="noopener">support.microsoft.com</a></li>
+    </ul>
+
+    <h3>6. Periodo di conservazione</h3>
+    <p>I cookie hanno durate diverse a seconda della tipologia: i cookie di sessione si cancellano alla chiusura del browser; i cookie persistenti hanno una durata che varia da pochi minuti a un massimo, di norma, di 12 mesi, salvo specifiche eccezioni indicate per i singoli cookie.</p>
+
+    <h3>7. Titolare del trattamento</h3>
+    <p>Il Titolare del trattamento dei dati raccolti tramite cookie è <strong>[Ragione sociale società]</strong>, ai recapiti indicati nell'<a href="#" onclick="openPolicy('privacy');return false">Informativa sul trattamento dei dati personali</a>.</p>
+
+    <h3>8. Modifiche alla Cookie Policy</h3>
+    <p>La presente Cookie Policy può essere periodicamente aggiornata per riflettere modifiche normative, tecnologiche o organizzative. La versione attuale è quella pubblicata sul sito con data di ultimo aggiornamento sopra indicata.</p>
+  `
+};
+
+function openPolicy(type){
+  document.getElementById('policyContent').innerHTML = policies[type];
+  document.getElementById('policyModal').classList.add('show');
+}
+</script>
+
+</body>
+</html>
