@@ -3774,14 +3774,61 @@ document.querySelectorAll('.faq-q').forEach(q => {
 /* ========== CONTACT FORM ========== */
 const CALENDAR_URL = 'https://calendar.app.google/zVHe8P3v7DfzQrqBA';
 
+/* ====== INVIO DATI FORM A GOOGLE FOGLI ======
+   Incolla qui sotto l'URL dell'app web di Google Apps Script
+   (quello che finisce con /exec). */
+const SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyk4AlAaacXQSgyIdGjsok-KW8NWkNDUUdiqKnQOswaT0PFvk8g-3tBrJf1gvtaZXqr/exec';
+
+function inviaAFoglioGoogle(dati){
+  return fetch(SHEET_ENDPOINT, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(dati)
+  });
+}
+
 document.getElementById('leadForm').addEventListener('submit', e => {
   e.preventDefault();
-  document.getElementById('leadForm').style.display = 'none';
-  document.getElementById('formSuccess').classList.add('show');
+  const form = e.target;
+  const btn = form.querySelector('.form-submit');
+  const btnTesto = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Invio in corso...';
+
+  const dati = {
+    firstname: form.firstname.value.trim(),
+    lastname:  form.lastname.value.trim(),
+    email:     form.email.value.trim(),
+    phone:     form.phone.value.trim(),
+    company:   form.company.value.trim(),
+    role:      form.role.value.trim(),
+    size:      form.size.value,
+    area:      form.area.value,
+    message:   form.message.value.trim(),
+    origine:   'Form contatti'
+  };
+
+  inviaAFoglioGoogle(dati)
+    .then(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = btnTesto;
+      alert("Si è verificato un problema nell'invio. Riprova tra poco o scrivici via email.");
+    });
 });
 
 document.getElementById('exitForm').addEventListener('submit', e => {
   e.preventDefault();
+
+  inviaAFoglioGoogle({
+    phone:   document.getElementById('exit-phone').value.trim(),
+    origine: 'Popup di uscita'
+  });
+
   // Mostra conferma in-place al posto del form
   const modal = document.querySelector('#exitModal .modal');
   modal.innerHTML = '<button class="modal-close" onclick="closeModal(\'exitModal\')">×</button>' +
